@@ -1,8 +1,8 @@
 ﻿<Application
-    x:Class="WPF_UserInterfaceDesign.App"
+    x:Class="Login.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="clr-namespace:WPF_UserInterfaceDesign"
+    xmlns:local="clr-namespace:Login"
     StartupUri="MainWindow.xaml">
 
     <Application.Resources>

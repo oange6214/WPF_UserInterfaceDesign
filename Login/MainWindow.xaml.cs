@@ -2,7 +2,7 @@
 using System.Windows.Controls;
 using System.Windows.Input;
 
-namespace WPF_UserInterfaceDesign
+namespace Login
 {
     public partial class MainWindow : Window
     {

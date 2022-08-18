@@ -37,4 +37,11 @@
     </Resource>
   </ItemGroup>
 
+  <ItemGroup>
+    <Page Update="Apps\Resources\LoginStyle.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
 </Project>
