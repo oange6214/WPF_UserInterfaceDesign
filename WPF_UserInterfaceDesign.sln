@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Login", "Login\Login.csproj", "{CF6F44D9-B469-4F5D-82EB-B03DD9116761}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard.SocialMediaInfo", "Dashboard.SocialMediaInfo\Dashboard.SocialMediaInfo.csproj", "{A0010AAF-61D6-45F8-91D7-02DA037F135F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{CF6F44D9-B469-4F5D-82EB-B03DD9116761}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF6F44D9-B469-4F5D-82EB-B03DD9116761}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF6F44D9-B469-4F5D-82EB-B03DD9116761}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0010AAF-61D6-45F8-91D7-02DA037F135F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0010AAF-61D6-45F8-91D7-02DA037F135F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0010AAF-61D6-45F8-91D7-02DA037F135F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0010AAF-61D6-45F8-91D7-02DA037F135F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
