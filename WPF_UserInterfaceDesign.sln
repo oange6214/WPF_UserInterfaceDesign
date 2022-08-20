@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard.WalletPayment", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalendarApp", "CalendarApp\CalendarApp.csproj", "{C0DCF544-2F5E-4681-BC89-1A9C7430D89B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResponsiveInstagramApp", "ResponsiveInstagramApp\ResponsiveInstagramApp.csproj", "{822D2DED-B6C2-431B-8F20-6578E0E1FE0F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C0DCF544-2F5E-4681-BC89-1A9C7430D89B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0DCF544-2F5E-4681-BC89-1A9C7430D89B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0DCF544-2F5E-4681-BC89-1A9C7430D89B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{822D2DED-B6C2-431B-8F20-6578E0E1FE0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{822D2DED-B6C2-431B-8F20-6578E0E1FE0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{822D2DED-B6C2-431B-8F20-6578E0E1FE0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{822D2DED-B6C2-431B-8F20-6578E0E1FE0F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
