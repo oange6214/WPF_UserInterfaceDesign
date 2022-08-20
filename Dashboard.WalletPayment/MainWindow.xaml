@@ -620,15 +620,9 @@
                             VerticalAlignment="Center"
                             Content="Change"
                             Style="{StaticResource button}" />
-
                     </Grid>
                 </Border>
-
-
             </StackPanel>
         </Grid>
-
-
-
     </Grid>
 </Window>
