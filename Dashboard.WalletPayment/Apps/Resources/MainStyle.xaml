@@ -1,0 +1,357 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp">
+
+    <Style x:Key="menuButton" TargetType="Button">
+        <Setter Property="Height" Value="47" />
+        <Setter Property="Width" Value="217" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Foreground" Value="#F0F0F0" />
+        <Setter Property="Margin" Value="0" />
+        <Setter Property="HorizontalAlignment" Value="Right" />
+        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Padding="20,0"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="Transparent"
+                        BorderThickness="3,0,0,0"
+                        CornerRadius="20">
+                        <ContentPresenter HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="#21203B" />
+                <Setter Property="Foreground" Value="#E9E9E9" />
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border
+                                Padding="20,0"
+                                Background="{TemplateBinding Background}"
+                                BorderThickness="3,0,0,0"
+                                CornerRadius="20">
+                                <Border.BorderBrush>
+                                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                        <GradientStop Offset="0" Color="#D489FF" />
+                                        <GradientStop Offset="0.5" Color="#7985FF" />
+                                        <GradientStop Offset="1" Color="#6AD8FD" />
+                                    </LinearGradientBrush>
+                                </Border.BorderBrush>
+
+                                <ContentPresenter HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+
+            <Trigger Property="IsMouseCaptured" Value="True">
+                <Setter Property="Background" Value="#1A192E" />
+                <Setter Property="Foreground" Value="#FFFFFF" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="buttonIcon" TargetType="fa:IconImage">
+        <Setter Property="Foreground" Value="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Button}}, Path=Foreground}" />
+        <Setter Property="Width" Value="18" />
+        <Setter Property="Height" Value="18" />
+    </Style>
+
+    <Style x:Key="buttonIconExpanded" TargetType="fa:IconImage">
+        <Setter Property="Foreground" Value="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Button}}, Path=Foreground}" />
+        <Setter Property="Width" Value="10" />
+        <Setter Property="Height" Value="10" />
+        <Setter Property="HorizontalAlignment" Value="Right" />
+        <Setter Property="Visibility" Value="Hidden" />
+
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Button}, Path=IsMouseOver}" Value="True">
+                <Setter Property="Visibility" Value="Visible" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="buttonText" TargetType="TextBlock">
+        <Setter Property="Margin" Value="13,0,0,0" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+    </Style>
+
+    <Style
+        x:Key="activeMenuButton"
+        BasedOn="{StaticResource menuButton}"
+        TargetType="Button">
+        <Setter Property="Background" Value="#21203B" />
+        <Setter Property="Foreground" Value="#E9E9E9" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Padding="20,0"
+                        Background="{TemplateBinding Background}"
+                        BorderThickness="3,0,0,0"
+                        CornerRadius="20">
+                        <Border.BorderBrush>
+                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                <GradientStop Offset="0" Color="#D489FF" />
+                                <GradientStop Offset="0.5" Color="#7985FF" />
+                                <GradientStop Offset="1" Color="#6AD8FD" />
+                            </LinearGradientBrush>
+                        </Border.BorderBrush>
+
+                        <ContentPresenter HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="border" TargetType="Border">
+        <Setter Property="Background" Value="#362F54" />
+        <Setter Property="Padding" Value="10" />
+        <Setter Property="CornerRadius" Value="25" />
+        <Setter Property="NumberSubstitution.Substitution" Value="AsCulture" />
+    </Style>
+
+    <Style x:Key="tabButton" TargetType="Button">
+        <Setter Property="Height" Value="50" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Foreground" Value="#FCFCFC" />
+        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Padding="20,0"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="#3F375F"
+                        BorderThickness="0,0,0,2">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Foreground" Value="#E9E9E9" />
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border
+                                Padding="20,10"
+                                Background="{TemplateBinding Background}"
+                                BorderThickness="0,0,0,2">
+                                <Border.BorderBrush>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                                        <GradientStop Offset="0" Color="#D489FF" />
+                                        <GradientStop Offset="0.5" Color="#7985FF" />
+                                        <GradientStop Offset="1" Color="#6AD8FD" />
+                                    </LinearGradientBrush>
+                                </Border.BorderBrush>
+
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+
+            <Trigger Property="IsMouseCaptured" Value="True">
+                <Setter Property="Foreground" Value="#FFFFFF" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style
+        x:Key="activeTabButton"
+        BasedOn="{StaticResource tabButton}"
+        TargetType="Button">
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Padding="20,10"
+                        Background="{TemplateBinding Background}"
+                        BorderThickness="0,0,0,2">
+                        <Border.BorderBrush>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                                <GradientStop Offset="0" Color="#D489FF" />
+                                <GradientStop Offset="0.5" Color="#7985FF" />
+                                <GradientStop Offset="1" Color="#6AD8FD" />
+                            </LinearGradientBrush>
+                        </Border.BorderBrush>
+
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="textLabel" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="#FCFCFC" />
+    </Style>
+
+    <Style TargetType="TextBox">
+        <Setter Property="Background" Value="#3F375F" />
+        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+        <Setter Property="Padding" Value="15,12" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="Foreground" Value="#FCFCFC" />
+        <Style.Resources>
+            <Style TargetType="Border">
+                <Setter Property="CornerRadius" Value="15" />
+            </Style>
+        </Style.Resources>
+    </Style>
+
+    <Style x:Key="sendButton" TargetType="Button">
+        <Setter Property="Height" Value="50" />
+        <Setter Property="Foreground" Value="#F0F0F0" />
+        <Setter Property="Margin" Value="0,15,0,0" />
+        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Padding="20,0"
+                        BorderThickness="0"
+                        CornerRadius="20">
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                                <GradientStop Offset="0" Color="#7985FF" />
+                                <GradientStop Offset="1" Color="#6AD8FD" />
+                            </LinearGradientBrush>
+                        </Border.Background>
+
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Foreground" Value="White" />
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border
+                                Padding="20,0"
+                                BorderThickness="0"
+                                CornerRadius="20">
+                                <Border.Background>
+                                    <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                                        <GradientStop Offset="0.5" Color="#7985FF" />
+                                        <GradientStop Offset="1" Color="#6AD8FD" />
+                                    </LinearGradientBrush>
+                                </Border.Background>
+
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="whiteIcon" TargetType="fa:IconImage">
+        <Setter Property="Foreground" Value="#F0F0F0" />
+        <Setter Property="Width" Value="15" />
+        <Setter Property="Height" Value="15" />
+    </Style>
+
+    <Style x:Key="cardBorder" TargetType="Border">
+        <Setter Property="Padding" Value="10" />
+        <Setter Property="CornerRadius" Value="25" />
+        <Setter Property="Height" Value="150" />
+        <Setter Property="VerticalAlignment" Value="Top" />
+    </Style>
+
+    <Style x:Key="bankCardNumber" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="#FCFCFC" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="Margin" Value="20" />
+    </Style>
+
+    <Style x:Key="topMenuIcon" TargetType="fa:IconImage">
+        <Setter Property="Foreground" Value="#F0F0F0" />
+        <Setter Property="Width" Value="16" />
+        <Setter Property="Height" Value="14" />
+        <Setter Property="Margin" Value="4" />
+    </Style>
+
+    <Style x:Key="button" TargetType="Button">
+        <Setter Property="Foreground" Value="#F0F0F0" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Padding="10,8"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="#504373"
+                        BorderThickness="1"
+                        CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Foreground" Value="#F0F0F0" />
+                <Setter Property="Background" Value="#504373" />
+            </Trigger>
+            <Trigger Property="IsMouseCaptured" Value="True">
+                <Setter Property="Foreground" Value="White" />
+                <Setter Property="Background" Value="#2F2745" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style
+        x:Key="topMenuButton"
+        BasedOn="{StaticResource button}"
+        TargetType="Button">
+        <Setter Property="Background" Value="#3C315B" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Padding="10,8"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="#504373"
+                        BorderThickness="1"
+                        CornerRadius="15">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style
+        x:Key="fillButton"
+        BasedOn="{StaticResource button}"
+        TargetType="Button">
+        <Setter Property="Background" Value="#6B5A96" />
+    </Style>
+
+</ResourceDictionary>
