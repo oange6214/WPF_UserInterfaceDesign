@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Login", "Login\Login.csproj", "{CF6F44D9-B469-4F5D-82EB-B03DD9116761}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Login", "Login\Login.csproj", "{CF6F44D9-B469-4F5D-82EB-B03DD9116761}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard.SocialMediaInfo", "Dashboard.SocialMediaInfo\Dashboard.SocialMediaInfo.csproj", "{A0010AAF-61D6-45F8-91D7-02DA037F135F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard.SocialMediaInfo", "Dashboard.SocialMediaInfo\Dashboard.SocialMediaInfo.csproj", "{A0010AAF-61D6-45F8-91D7-02DA037F135F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard.WalletPayment", "Dashboard.WalletPayment\Dashboard.WalletPayment.csproj", "{EB9F0CF0-E7D9-4C81-B862-1C23F1AD9F8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard.WalletPayment", "Dashboard.WalletPayment\Dashboard.WalletPayment.csproj", "{EB9F0CF0-E7D9-4C81-B862-1C23F1AD9F8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalendarApp", "CalendarApp\CalendarApp.csproj", "{C0DCF544-2F5E-4681-BC89-1A9C7430D89B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalendarApp", "CalendarApp\CalendarApp.csproj", "{C0DCF544-2F5E-4681-BC89-1A9C7430D89B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResponsiveInstagramApp", "ResponsiveInstagramApp\ResponsiveInstagramApp.csproj", "{822D2DED-B6C2-431B-8F20-6578E0E1FE0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ResponsiveInstagramApp", "ResponsiveInstagramApp\ResponsiveInstagramApp.csproj", "{822D2DED-B6C2-431B-8F20-6578E0E1FE0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherApp", "WeatherApp\WeatherApp.csproj", "{3889A6D8-2104-4ED9-93E2-58B2903AA01D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{822D2DED-B6C2-431B-8F20-6578E0E1FE0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{822D2DED-B6C2-431B-8F20-6578E0E1FE0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{822D2DED-B6C2-431B-8F20-6578E0E1FE0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3889A6D8-2104-4ED9-93E2-58B2903AA01D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3889A6D8-2104-4ED9-93E2-58B2903AA01D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3889A6D8-2104-4ED9-93E2-58B2903AA01D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3889A6D8-2104-4ED9-93E2-58B2903AA01D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

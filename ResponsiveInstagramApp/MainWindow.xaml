@@ -266,7 +266,7 @@
                     Foreground="#333333" />
 
                 <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
-                    <Label Content="Latest" Style="{StaticResource activateTextButton}" />
+                    <Label Content="Latest" Style="{StaticResource activeTextButton}" />
                     <Label
                         Margin="15,0,0,0"
                         Content="Popular"

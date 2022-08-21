@@ -244,7 +244,7 @@
     </Style>
 
     <Style
-        x:Key="activateTextButton"
+        x:Key="activeTextButton"
         BasedOn="{StaticResource textButton}"
         TargetType="Label">
         <Setter Property="Template">

@@ -1,0 +1,54 @@
+﻿<UserControl
+    x:Class="WeatherApp.UserContorls.CardDay"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WeatherApp.UserContorls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Name="cardDay"
+    mc:Ignorable="d">
+
+    <Border
+        Width="88"
+        Margin="0,0,10,0"
+        Padding="10"
+        BorderThickness="1"
+        CornerRadius="10">
+        <Border.Style>
+            <Style TargetType="Border">
+                <Setter Property="Background" Value="White" />
+                <Setter Property="BorderBrush" Value="#E9E9E9" />
+
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="BorderBrush" Value="#03A9F4" />
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </Border.Style>
+
+        <StackPanel>
+            <TextBlock
+                FontSize="14"
+                FontWeight="SemiBold"
+                Text="{Binding ElementName=cardDay, Path=Day}"
+                TextAlignment="Center" />
+            <Image
+                Width="30"
+                Margin="0,10,0,10"
+                Source="{Binding ElementName=cardDay, Path=Source}" />
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                <TextBlock
+                    Margin="0,0,8,0"
+                    FontWeight="SemiBold"
+                    Text="{Binding ElementName=cardDay, Path=MaxNum}"
+                    TextAlignment="Center" />
+                <TextBlock
+                    FontWeight="SemiBold"
+                    Foreground="#7A7A7A"
+                    Text="{Binding ElementName=cardDay, Path=MinNum}"
+                    TextAlignment="Center" />
+            </StackPanel>
+        </StackPanel>
+    </Border>
+</UserControl>
