@@ -78,13 +78,13 @@
         </StackPanel>
 
         <TextBlock
-            Grid.Column="6"
+            Grid.Column="5"
             VerticalAlignment="Center"
             FontSize="16"
             FontWeight="SemiBold"
             Text="{Binding ElementName=product, Path=Price}" />
 
-        <Button Grid.Column="5" Style="{StaticResource buttonRemove}">
+        <Button Grid.Column="6" Style="{StaticResource buttonRemove}">
             <Image
                 Width="18"
                 Source="pack://application:,,,/FlatShoppingCart;component/Apps/Images/remove.png"

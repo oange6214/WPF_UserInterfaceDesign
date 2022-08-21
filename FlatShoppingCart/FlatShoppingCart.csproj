@@ -19,6 +19,7 @@
     <None Remove="Apps\Images\p2.png" />
     <None Remove="Apps\Images\p3.png" />
     <None Remove="Apps\Images\p4.png" />
+    <None Remove="Apps\Images\remove.png" />
     <None Remove="Apps\Images\visa.png" />
   </ItemGroup>
 
@@ -54,6 +55,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Apps\Images\low.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Images\remove.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Apps\Images\visa.png">
