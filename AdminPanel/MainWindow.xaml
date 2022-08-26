@@ -177,9 +177,17 @@
                     VerticalAlignment="Top"
                     Orientation="Horizontal">
 
-                    <Button Style="{StaticResource windowControlButton}" Tag="WindowMinimize" />
-                    <Button Style="{StaticResource windowControlButton}" Tag="WindowMaximize" />
-                    <Button Style="{StaticResource windowControlButton}" Tag="Close" />
+
+                    <Button Style="{StaticResource windowControlButton}">
+                        <fa:IconImage Icon="WindowMinimize" Style="{StaticResource windowControlIcon}" />
+                    </Button>
+
+                    <Button Style="{StaticResource windowControlButton}">
+                        <fa:IconImage Icon="WindowMaximize" Style="{StaticResource windowControlIcon}" />
+                    </Button>
+                    <Button Style="{StaticResource windowControlButton}">
+                        <fa:IconImage Icon="Close" Style="{StaticResource windowControlIcon}" />
+                    </Button>
 
                 </StackPanel>
 
