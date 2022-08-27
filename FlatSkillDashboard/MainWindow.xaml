@@ -1,0 +1,477 @@
+﻿<Window
+    x:Class="FlatSkillDashboard.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+    xmlns:local="clr-namespace:FlatSkillDashboard"
+    xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:uc="clr-namespace:FlatSkillDashboard.UserControls"
+    Title="MainWindow"
+    Width="1130"
+    Height="720"
+    AllowsTransparency="True"
+    Background="Transparent"
+    WindowStartupLocation="CenterScreen"
+    WindowStyle="None"
+    mc:Ignorable="d">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!--  Main Menu  -->
+        <Border
+            Background="#F4F4F4"
+            BorderBrush="#D9D9D9"
+            BorderThickness="0,0,1,0"
+            CornerRadius="30 0 0 30">
+            <Grid>
+                <!--  Top Button  -->
+                <Button Style="{StaticResource menuButtonTop}">
+                    <Button.Effect>
+                        <DropShadowEffect
+                            BlurRadius="10"
+                            Opacity="0.1"
+                            ShadowDepth="5" />
+                    </Button.Effect>
+                    <TextBlock
+                        Margin="0,0,0,2"
+                        FontSize="20"
+                        FontWeight="SemiBold"
+                        Foreground="#FF869E"
+                        Text="Sz" />
+                </Button>
+
+                <!--  Menu Buttons  -->
+                <StackPanel VerticalAlignment="Center">
+                    <Button Style="{StaticResource menuButton}">
+                        <fa:IconImage Icon="Book" Style="{StaticResource menuButtonIcon}" />
+                    </Button>
+
+                    <Button Style="{StaticResource menuButton}">
+                        <fa:IconImage Icon="PieChart" Style="{StaticResource menuButtonIcon}" />
+                    </Button>
+
+                    <Button Style="{StaticResource menuButton}">
+                        <fa:IconImage Icon="Comment" Style="{StaticResource menuButtonIcon}" />
+                    </Button>
+
+                    <Button Style="{StaticResource menuButton}">
+                        <fa:IconImage Icon="Cog" Style="{StaticResource menuButtonIcon}" />
+                    </Button>
+                </StackPanel>
+
+                <!--  Bottom Button  -->
+                <Button
+                    Margin="0,0,0,15"
+                    VerticalAlignment="Bottom"
+                    Style="{StaticResource menuButton}">
+                    <fa:IconImage Icon="PowerOff" Style="{StaticResource menuButtonIcon}" />
+                </Button>
+            </Grid>
+        </Border>
+
+        <!--  Main Section  -->
+        <Border
+            Grid.Column="1"
+            Background="#F4F4F4"
+            CornerRadius="0 30 30 0"
+            MouseDown="Border_MouseDown">
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <!--  Top Background  -->
+                <Border Background="#2F394E" CornerRadius="0 30 0 0 " />
+
+                <!--  Top Section  -->
+                <StackPanel
+                    Margin="75,0,0,40"
+                    VerticalAlignment="Center"
+                    Orientation="Horizontal">
+                    <!--  Main Image  -->
+                    <Grid
+                        Width="180"
+                        Height="180"
+                        VerticalAlignment="Center">
+                        <lvc:PieChart
+                            Height="180"
+                            DataTooltip="{x:Null}"
+                            Hoverable="False"
+                            InnerRadius="80"
+                            LegendLocation="None">
+                            <lvc:PieChart.Series>
+                                <lvc:PieSeries
+                                    Fill="#FFBE41"
+                                    StrokeThickness="0"
+                                    Values="2" />
+                                <lvc:PieSeries
+                                    Fill="#DFE931"
+                                    StrokeThickness="0"
+                                    Values="2" />
+                                <lvc:PieSeries
+                                    Fill="Transparent"
+                                    StrokeThickness="0"
+                                    Values="1.5" />
+                                <lvc:PieSeries
+                                    Fill="#664BFB"
+                                    StrokeThickness="0"
+                                    Values="2" />
+                            </lvc:PieChart.Series>
+                        </lvc:PieChart>
+
+                        <Border
+                            Width="145"
+                            Height="145"
+                            Background="#FFFFFF"
+                            CornerRadius="100">
+                            <Ellipse>
+                                <Ellipse.Fill>
+                                    <ImageBrush ImageSource="Apps/Images/p1.png" />
+                                </Ellipse.Fill>
+                            </Ellipse>
+                        </Border>
+                    </Grid>
+
+                    <!--  Title Number  -->
+                    <TextBlock
+                        Margin="50,0,30,10"
+                        VerticalAlignment="Center"
+                        FontSize="100"
+                        FontWeight="SemiBold"
+                        Foreground="#FFFFFF"
+                        Text="87" />
+
+                    <!--  Title Texts  -->
+                    <StackPanel Margin="0,0,0,10" VerticalAlignment="Center">
+                        <TextBlock
+                            FontSize="32"
+                            FontWeight="SemiBold"
+                            Foreground="#FFFFFF"
+                            Text="Your Learning points"
+                            TextWrapping="Wrap" />
+                        <TextBlock
+                            Margin="0,10,0,0"
+                            FontSize="16"
+                            FontWeight="SemiBold"
+                            Foreground="#E4E5E8"
+                            Text="James, you did a great job last week!"
+                            TextWrapping="Wrap" />
+                    </StackPanel>
+
+                    <!--  Green Info Chart  -->
+                    <StackPanel Margin="50,0,0,10" VerticalAlignment="Center">
+                        <TextBlock Style="{StaticResource infoTitle}">
+                            <Run>3.5</Run>
+                            <Run FontSize="20" FontWeight="Light">h</Run>
+                        </TextBlock>
+                        <TextBlock Style="{StaticResource infoText}" Text="Last Week" />
+
+                        <Grid
+                            Width="80"
+                            Height="40"
+                            Margin="0,0,5,0">
+                            <lvc:CartesianChart>
+                                <lvc:CartesianChart.AxisX>
+                                    <lvc:Axis ShowLabels="False">
+                                        <lvc:Axis.Separator>
+                                            <lvc:Separator StrokeThickness="0" />
+                                        </lvc:Axis.Separator>
+                                    </lvc:Axis>
+                                </lvc:CartesianChart.AxisX>
+
+                                <lvc:CartesianChart.AxisY>
+                                    <lvc:Axis
+                                        MaxValue="50"
+                                        MinValue="-8"
+                                        ShowLabels="False">
+                                        <lvc:Axis.Separator>
+                                            <lvc:Separator StrokeThickness="0" />
+                                        </lvc:Axis.Separator>
+                                    </lvc:Axis>
+                                </lvc:CartesianChart.AxisY>
+
+                                <lvc:CartesianChart.Series>
+                                    <lvc:LineSeries
+                                        PointGeometrySize="0"
+                                        Stroke="#91D35F"
+                                        StrokeThickness="1"
+                                        Values="0,10,20,15,40,30,45,30">
+                                        <lvc:LineSeries.Fill>
+                                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                <GradientStop Offset="0.4" Color="#5C785C" />
+                                                <GradientStop Offset="1.2" Color="#405051" />
+                                            </LinearGradientBrush>
+                                        </lvc:LineSeries.Fill>
+                                    </lvc:LineSeries>
+                                </lvc:CartesianChart.Series>
+                            </lvc:CartesianChart>
+                        </Grid>
+                    </StackPanel>
+
+                    <!--  Sperator  -->
+                    <StackPanel Margin="15,0,15,10" Orientation="Horizontal">
+                        <Rectangle
+                            Width="0.8"
+                            VerticalAlignment="Stretch"
+                            Stroke="#414C61" />
+                    </StackPanel>
+
+                    <!--  Pink Info Chart  -->
+                    <StackPanel Margin="0,0,0,10" VerticalAlignment="Center">
+                        <TextBlock Style="{StaticResource infoTitle}">
+                            <Run>9.5</Run>
+                            <Run FontSize="20" FontWeight="Light">h</Run>
+                        </TextBlock>
+                        <TextBlock Style="{StaticResource infoText}" Text="Last Semster" />
+
+                        <Grid
+                            Width="80"
+                            Height="40"
+                            Margin="0,0,5,0">
+                            <lvc:CartesianChart>
+                                <lvc:CartesianChart.AxisX>
+                                    <lvc:Axis ShowLabels="False">
+                                        <lvc:Axis.Separator>
+                                            <lvc:Separator StrokeThickness="0" />
+                                        </lvc:Axis.Separator>
+                                    </lvc:Axis>
+                                </lvc:CartesianChart.AxisX>
+
+                                <lvc:CartesianChart.AxisY>
+                                    <lvc:Axis
+                                        MaxValue="50"
+                                        MinValue="-7"
+                                        ShowLabels="False">
+                                        <lvc:Axis.Separator>
+                                            <lvc:Separator StrokeThickness="0" />
+                                        </lvc:Axis.Separator>
+                                    </lvc:Axis>
+                                </lvc:CartesianChart.AxisY>
+
+                                <lvc:CartesianChart.Series>
+                                    <lvc:LineSeries
+                                        PointGeometrySize="0"
+                                        Stroke="#FF829A"
+                                        StrokeThickness="1"
+                                        Values="0,10,20,22,30,25,45,38">
+                                        <lvc:LineSeries.Fill>
+                                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                <GradientStop Offset="0.4" Color="#6D4F65" />
+                                                <GradientStop Offset="1.2" Color="#484257" />
+                                            </LinearGradientBrush>
+                                        </lvc:LineSeries.Fill>
+                                    </lvc:LineSeries>
+                                </lvc:CartesianChart.Series>
+                            </lvc:CartesianChart>
+                        </Grid>
+                    </StackPanel>
+                </StackPanel>
+
+                <!--  Bottm Section  -->
+                <Grid Grid.Row="1" Margin="20,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <!--  Pink Button  -->
+
+                    <Button Style="{StaticResource pinkButton}">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="0,0,15,1" Text="Improve tour skill" />
+                            <fa:IconImage
+                                Width="10"
+                                Foreground="#FFFFFF"
+                                Icon="Plug" />
+                        </StackPanel>
+                    </Button>
+
+                    <!--  Team Section  -->
+                    <StackPanel Margin="20,60,20,40">
+                        <Grid>
+                            <TextBlock
+                                FontSize="18"
+                                FontWeight="SemiBold"
+                                Foreground="#787C86"
+                                Text="My Teammates" />
+
+                            <Border
+                                Width="25"
+                                Height="25"
+                                HorizontalAlignment="Right"
+                                Background="#787C86"
+                                CornerRadius="50">
+                                <fa:IconImage
+                                    Width="7"
+                                    Height="7"
+                                    Margin="2,0,0,0"
+                                    Foreground="#FFFFFF"
+                                    Icon="Play" />
+                            </Border>
+                        </Grid>
+
+                        <Separator
+                            Height="0.7"
+                            Margin="0,10,0,10"
+                            Foreground="#787C86" />
+
+                        <!--  Team  -->
+                        <uc:Teammate
+                            Title="Anna Ballard"
+                            Num="87"
+                            Source="Apps/Images/P2.png" />
+                        <uc:Teammate
+                            Title="John Doe"
+                            Num="76"
+                            Source="Apps/Images/P3.png" />
+                        <uc:Teammate
+                            Title="Sam Vodkina"
+                            Num="64"
+                            Source="Apps/Images/P4.png" />
+                    </StackPanel>
+
+                    <!--  Skill Section  -->
+                    <Border
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Margin="20,-60,20,40"
+                        Padding="30,20,30,20"
+                        Background="#FFFFFF"
+                        CornerRadius="20">
+                        <StackPanel>
+                            <!--  Title  -->
+                            <TextBlock Style="{StaticResource title}" Text="Your main Skillset" />
+                            <TextBlock Style="{StaticResource desc}">
+                                <Run>You improved it by</Run>
+                                <Run Foreground="#E37C91">12 points</Run>
+                                <Run>last week</Run>
+                            </TextBlock>
+
+                            <!--  Middle Circle  -->
+                            <Grid Margin="0,38">
+                                <lvc:PieChart
+                                    Height="150"
+                                    DataTooltip="{x:Null}"
+                                    Hoverable="False"
+                                    InnerRadius="80"
+                                    LegendLocation="None">
+                                    <lvc:PieChart.Series>
+                                        <lvc:PieSeries
+                                            Fill="#FFBE41"
+                                            StrokeThickness="0"
+                                            Values="1" />
+                                        <lvc:PieSeries
+                                            Fill="#DFE931"
+                                            StrokeThickness="0"
+                                            Values="1" />
+                                        <lvc:PieSeries
+                                            Fill="#664BFB"
+                                            StrokeThickness="0"
+                                            Values="1" />
+                                    </lvc:PieChart.Series>
+                                </lvc:PieChart>
+
+                                <TextBlock
+                                    Margin="0,0,0,20"
+                                    VerticalAlignment="Center"
+                                    FontSize="44"
+                                    FontWeight="SemiBold"
+                                    Text="74"
+                                    TextAlignment="Center" />
+                                <TextBlock
+                                    Margin="0,45,0,0"
+                                    VerticalAlignment="Center"
+                                    Foreground="#9CA2B3"
+                                    Text="Main Skill"
+                                    TextAlignment="Center" />
+                            </Grid>
+
+                            <!--  Bottom Infomations  -->
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <!--  infos  -->
+                                <uc:Info
+                                    Title="Graphic Design"
+                                    Grid.Column="0"
+                                    Desc="35%"
+                                    Color="#6254F9" />
+                                <uc:Info
+                                    Title="UX / UI"
+                                    Grid.Column="1"
+                                    Desc="3%"
+                                    Color="#FFBE41" />
+                                <uc:Info
+                                    Title="Management"
+                                    Grid.Column="2"
+                                    Desc="39%"
+                                    Color="#DFE931" />
+                            </Grid>
+
+                        </StackPanel>
+                    </Border>
+
+                    <!--  Lesson Section  -->
+                    <Border
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        Margin="20,-60,20,40"
+                        Padding="30,20,30,0"
+                        Background="#FFFFFF"
+                        CornerRadius="20">
+                        <StackPanel>
+                            <!--  Title  -->
+                            <TextBlock Style="{StaticResource title}" Text="Next lessons" />
+                            <TextBlock Style="{StaticResource desc}">
+                                <Run>You will need</Run>
+                                <Run Foreground="#E37C91">4.5 hours</Run>
+                                <Run>last week</Run>
+                            </TextBlock>
+
+                            <!--  Lessons  -->
+                            <uc:Lessons
+                                Title="Advanced Creative Technique"
+                                Margin="0,10,0,0"
+                                Desc="Graphic Design, Photoshop | 35:12"
+                                Color="#664BFB" />
+                            <uc:Lessons
+                                Title="Customer Journey Mapping"
+                                Desc="UX / UI, Architecture | 22:43 m"
+                                Color="#FFBE41" />
+                            <uc:Lessons
+                                Title="Building Remote Teams"
+                                Desc="Management, Jira | 1.35 h"
+                                Color="#DFE931" />
+                            <uc:Lessons
+                                Title="Figma Workshop"
+                                Desc="Professional Tools | 1.12 h"
+                                Color="#FC91A6" />
+
+                            <Button Style="{StaticResource whiteButton}">
+                                View Learning Plan
+                            </Button>
+
+                        </StackPanel>
+                    </Border>
+
+
+                </Grid>
+            </Grid>
+
+
+        </Border>
+    </Grid>
+</Window>

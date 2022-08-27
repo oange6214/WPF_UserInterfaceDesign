@@ -13,13 +13,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalendarApp", "CalendarApp\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ResponsiveInstagramApp", "ResponsiveInstagramApp\ResponsiveInstagramApp.csproj", "{822D2DED-B6C2-431B-8F20-6578E0E1FE0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherApp", "WeatherApp\WeatherApp.csproj", "{3889A6D8-2104-4ED9-93E2-58B2903AA01D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherApp", "WeatherApp\WeatherApp.csproj", "{3889A6D8-2104-4ED9-93E2-58B2903AA01D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistraionPage", "RegistraionPage\RegistraionPage.csproj", "{0B4CAE14-A888-4031-817A-B4E925496DBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegistraionPage", "RegistraionPage\RegistraionPage.csproj", "{0B4CAE14-A888-4031-817A-B4E925496DBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlatShoppingCart", "FlatShoppingCart\FlatShoppingCart.csproj", "{43455496-9188-44ED-ACB4-1A4416013E45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlatShoppingCart", "FlatShoppingCart\FlatShoppingCart.csproj", "{43455496-9188-44ED-ACB4-1A4416013E45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminPanel", "AdminPanel\AdminPanel.csproj", "{C52C2BEC-7661-46C1-8F54-08E584A37B3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdminPanel", "AdminPanel\AdminPanel.csproj", "{C52C2BEC-7661-46C1-8F54-08E584A37B3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlatSkillDashboard", "FlatSkillDashboard\FlatSkillDashboard.csproj", "{A3FEF68B-C2C0-415B-81BF-89B91888A4A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{C52C2BEC-7661-46C1-8F54-08E584A37B3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C52C2BEC-7661-46C1-8F54-08E584A37B3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C52C2BEC-7661-46C1-8F54-08E584A37B3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3FEF68B-C2C0-415B-81BF-89B91888A4A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3FEF68B-C2C0-415B-81BF-89B91888A4A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3FEF68B-C2C0-415B-81BF-89B91888A4A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3FEF68B-C2C0-415B-81BF-89B91888A4A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
