@@ -1,0 +1,30 @@
+﻿<UserControl
+    x:Class="SmartHomeApp.UserControls.AddButton"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:SmartHomeApp.UserControls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Name="addButton"
+    mc:Ignorable="d">
+
+    <Button
+        Width="300"
+        HorizontalAlignment="Right"
+        VerticalAlignment="Top"
+        Style="{StaticResource addButton}">
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock VerticalAlignment="Center" Text="{Binding ElementName=addButton, Path=Title}" />
+
+            <Border
+                Width="37"
+                Margin="20,0,0,0"
+                Padding="10"
+                Background="#3256F1"
+                CornerRadius="50">
+                <Image Source="../Apps/Images/add.png" />
+            </Border>
+        </StackPanel>
+    </Button>
+</UserControl>

@@ -1,0 +1,103 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Apps\Images\add.png" />
+    <None Remove="Apps\Images\cordinator_off.png" />
+    <None Remove="Apps\Images\cordinator_on.png" />
+    <None Remove="Apps\Images\electric_off.png" />
+    <None Remove="Apps\Images\electric_on.png" />
+    <None Remove="Apps\Images\fridge_off.png" />
+    <None Remove="Apps\Images\fridge_on.png" />
+    <None Remove="Apps\Images\light_off.png" />
+    <None Remove="Apps\Images\light_on.png" />
+    <None Remove="Apps\Images\p10.jpg" />
+    <None Remove="Apps\Images\p2.jpg" />
+    <None Remove="Apps\Images\_bed.png" />
+    <None Remove="Apps\Images\_chart.png" />
+    <None Remove="Apps\Images\_home2.png" />
+    <None Remove="Apps\Images\_home3.png" />
+    <None Remove="Apps\Images\_location.png" />
+    <None Remove="Apps\Images\_logout.png" />
+    <None Remove="Apps\Images\_setting.png" />
+    <None Remove="Apps\Images\_shield.png" />
+    <None Remove="Apps\Images\_users.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Apps\Images\add.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Images\electric_off.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Images\electric_on.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Images\fridge_off.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Images\fridge_on.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Images\light_off.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Images\light_on.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Images\p10.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Images\p2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Images\_bed.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Images\_chart.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Images\cordinator_off.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Images\cordinator_on.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Images\_home2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Images\_home3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Images\_location.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Images\_logout.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Images\_setting.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Images\_shield.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Apps\Images\_users.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Apps\Resources\MainStyle.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+</Project>
