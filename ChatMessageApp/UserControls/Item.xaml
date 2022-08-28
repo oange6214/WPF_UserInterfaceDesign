@@ -1,0 +1,101 @@
+﻿<UserControl
+    x:Class="ChatMessageApp.UserControls.Item"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Name="item">
+
+    <Border Padding="0,8">
+        <Border.Style>
+            <Style TargetType="Border">
+                <Setter Property="BorderBrush" Value="Transparent" />
+                <Setter Property="BorderThickness" Value="2,0,0,0" />
+
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background" Value="#F1EFFB" />
+                        <Setter Property="BorderBrush" Value="#6F52F9" />
+                    </Trigger>
+
+                    <DataTrigger Binding="{Binding ElementName=item, Path=IsActive}" Value="True">
+                        <Setter Property="Background" Value="#F1EFFB" />
+                        <Setter Property="BorderBrush" Value="#6F52F9" />
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+        </Border.Style>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="180 " />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Border
+                Width="43"
+                Height="43"
+                Margin="20,0,0,0"
+                Background="White"
+                CornerRadius="50">
+                <Grid>
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        FontSize="14"
+                        FontWeight="SemiBold"
+                        Foreground="{Binding ElementName=item, Path=Color}"
+                        Text="{Binding ElementName=item, Path=TagName}" />
+
+                    <Ellipse>
+                        <Ellipse.Style>
+                            <Style TargetType="Ellipse">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding ElementName=item, Path=Image}" Value="{x:Null}">
+                                        <Setter Property="Visibility" Value="Collapsed" />
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Ellipse.Style>
+
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="{Binding ElementName=item, Path=Image}" />
+                        </Ellipse.Fill>
+                    </Ellipse>
+                </Grid>
+            </Border>
+
+            <StackPanel
+                Grid.Column="1"
+                Margin="15,0,0,0"
+                VerticalAlignment="Center">
+
+                <TextBlock
+                    FontSize="14"
+                    FontWeight="SemiBold"
+                    Foreground="#212121"
+                    Text="{Binding ElementName=item, Path=Title}" />
+                <TextBlock
+                    Margin="0,3,0,0"
+                    Foreground="#8B8B8B"
+                    Text="{Binding ElementName=item, Path=Message}" />
+            </StackPanel>
+
+            <Border
+                Grid.Column="2"
+                Width="20"
+                Height="20"
+                Background="{Binding ElementName=item, Path=Color}"
+                CornerRadius="50"
+                Visibility="{Binding ElementName=item, Path=Visible}">
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Foreground="#FFF"
+                    Text="{Binding ElementName=item, Path=MessageCount}" />
+            </Border>
+
+        </Grid>
+
+
+    </Border>
+</UserControl>
