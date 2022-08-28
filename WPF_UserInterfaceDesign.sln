@@ -21,9 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlatShoppingCart", "FlatSho
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdminPanel", "AdminPanel\AdminPanel.csproj", "{C52C2BEC-7661-46C1-8F54-08E584A37B3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlatSkillDashboard", "FlatSkillDashboard\FlatSkillDashboard.csproj", "{A3FEF68B-C2C0-415B-81BF-89B91888A4A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlatSkillDashboard", "FlatSkillDashboard\FlatSkillDashboard.csproj", "{A3FEF68B-C2C0-415B-81BF-89B91888A4A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHomeApp", "SmartHomeApp\SmartHomeApp.csproj", "{E8E3074D-05AE-4704-A7AC-4DABA4C0C0BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartHomeApp", "SmartHomeApp\SmartHomeApp.csproj", "{E8E3074D-05AE-4704-A7AC-4DABA4C0C0BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingUpFrombyMaterialDesignToolkit", "SingUpFrombyMaterialDesignlToolkit\SingUpFrombyMaterialDesignToolkit.csproj", "{9FB590AF-6E49-493A-A4C7-D43134DBE0B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{E8E3074D-05AE-4704-A7AC-4DABA4C0C0BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8E3074D-05AE-4704-A7AC-4DABA4C0C0BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8E3074D-05AE-4704-A7AC-4DABA4C0C0BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FB590AF-6E49-493A-A4C7-D43134DBE0B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FB590AF-6E49-493A-A4C7-D43134DBE0B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FB590AF-6E49-493A-A4C7-D43134DBE0B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FB590AF-6E49-493A-A4C7-D43134DBE0B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
