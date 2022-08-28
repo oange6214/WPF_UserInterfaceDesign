@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingUpFrombyMaterialDesignT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatMessageApp", "ChatMessageApp\ChatMessageApp.csproj", "{28B6EFC8-AE5E-479F-AA53-E908B058CDD6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard.Recruitment", "Dashboard.Recruitment\Dashboard.Recruitment.csproj", "{D657834A-0909-4E86-95A2-BDC9E24D7860}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{28B6EFC8-AE5E-479F-AA53-E908B058CDD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28B6EFC8-AE5E-479F-AA53-E908B058CDD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28B6EFC8-AE5E-479F-AA53-E908B058CDD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D657834A-0909-4E86-95A2-BDC9E24D7860}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D657834A-0909-4E86-95A2-BDC9E24D7860}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D657834A-0909-4E86-95A2-BDC9E24D7860}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D657834A-0909-4E86-95A2-BDC9E24D7860}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
