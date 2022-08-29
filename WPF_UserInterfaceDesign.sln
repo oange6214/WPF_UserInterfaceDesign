@@ -25,11 +25,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlatSkillDashboard", "FlatS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartHomeApp", "SmartHomeApp\SmartHomeApp.csproj", "{E8E3074D-05AE-4704-A7AC-4DABA4C0C0BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingUpFrombyMaterialDesignToolkit", "SingUpFrombyMaterialDesignlToolkit\SingUpFrombyMaterialDesignToolkit.csproj", "{9FB590AF-6E49-493A-A4C7-D43134DBE0B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingUpFrombyMaterialDesignToolkit", "SingUpFrombyMaterialDesignlToolkit\SingUpFrombyMaterialDesignToolkit.csproj", "{9FB590AF-6E49-493A-A4C7-D43134DBE0B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatMessageApp", "ChatMessageApp\ChatMessageApp.csproj", "{28B6EFC8-AE5E-479F-AA53-E908B058CDD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatMessageApp", "ChatMessageApp\ChatMessageApp.csproj", "{28B6EFC8-AE5E-479F-AA53-E908B058CDD6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard.Recruitment", "Dashboard.Recruitment\Dashboard.Recruitment.csproj", "{D657834A-0909-4E86-95A2-BDC9E24D7860}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard.Recruitment", "Dashboard.Recruitment\Dashboard.Recruitment.csproj", "{D657834A-0909-4E86-95A2-BDC9E24D7860}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashborad.InputForm", "Dashborad.InputForm\Dashborad.InputForm.csproj", "{660AA8B9-2619-4C80-8594-70835F5B5525}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{D657834A-0909-4E86-95A2-BDC9E24D7860}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D657834A-0909-4E86-95A2-BDC9E24D7860}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D657834A-0909-4E86-95A2-BDC9E24D7860}.Release|Any CPU.Build.0 = Release|Any CPU
+		{660AA8B9-2619-4C80-8594-70835F5B5525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{660AA8B9-2619-4C80-8594-70835F5B5525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{660AA8B9-2619-4C80-8594-70835F5B5525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{660AA8B9-2619-4C80-8594-70835F5B5525}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
