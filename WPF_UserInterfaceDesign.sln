@@ -33,6 +33,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard.Recruitment", "Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashborad.InputForm", "Dashborad.InputForm\Dashborad.InputForm.csproj", "{660AA8B9-2619-4C80-8594-70835F5B5525}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard.FlatSales", "Dashboard.FlatSales\Dashboard.FlatSales.csproj", "{16DBEB78-DF41-47B7-8187-8C6A280DD000}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{660AA8B9-2619-4C80-8594-70835F5B5525}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{660AA8B9-2619-4C80-8594-70835F5B5525}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{660AA8B9-2619-4C80-8594-70835F5B5525}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16DBEB78-DF41-47B7-8187-8C6A280DD000}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16DBEB78-DF41-47B7-8187-8C6A280DD000}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16DBEB78-DF41-47B7-8187-8C6A280DD000}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16DBEB78-DF41-47B7-8187-8C6A280DD000}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

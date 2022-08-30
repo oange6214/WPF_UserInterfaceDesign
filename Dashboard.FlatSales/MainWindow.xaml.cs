@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Input;
 
-namespace Dashborad.InputForm
+namespace Dashboard.FlatSales
 {
     public partial class MainWindow : Window
     {
@@ -12,7 +12,7 @@ namespace Dashborad.InputForm
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if(e.ChangedButton == MouseButton.Left)
+            if (e.ChangedButton == MouseButton.Left)
             {
                 this.DragMove();
             }
@@ -26,8 +26,8 @@ namespace Dashborad.InputForm
                 if (IsMaximized)
                 {
                     this.WindowState = WindowState.Normal;
-                    this.Width = 1150;
-                    this.Height = 790;
+                    this.Width = 1280;
+                    this.Height = 780;
 
                     IsMaximized = false;
                 }
