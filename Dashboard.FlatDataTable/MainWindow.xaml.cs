@@ -9,8 +9,6 @@ namespace Dashboard.FlatDataTable
         public MainWindow()
         {
             InitializeComponent();
-
-            membersDataGrid.ItemsSource = new MainViewModel().members;
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)

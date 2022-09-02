@@ -35,7 +35,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashborad.InputForm", "Dash
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard.FlatSales", "Dashboard.FlatSales\Dashboard.FlatSales.csproj", "{16DBEB78-DF41-47B7-8187-8C6A280DD000}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard.FlatDataTable", "Dashboard.FlatDataTable\Dashboard.FlatDataTable.csproj", "{F3CAFBB5-A267-40C6-A8F7-5ECF794E4820}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard.FlatDataTable", "Dashboard.FlatDataTable\Dashboard.FlatDataTable.csproj", "{F3CAFBB5-A267-40C6-A8F7-5ECF794E4820}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TVSettingsApp", "TVSettingsApp\TVSettingsApp.csproj", "{C7E03F3C-7BCA-4C4E-8FE0-C57A177B4345}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,10 @@ Global
 		{F3CAFBB5-A267-40C6-A8F7-5ECF794E4820}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3CAFBB5-A267-40C6-A8F7-5ECF794E4820}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3CAFBB5-A267-40C6-A8F7-5ECF794E4820}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7E03F3C-7BCA-4C4E-8FE0-C57A177B4345}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7E03F3C-7BCA-4C4E-8FE0-C57A177B4345}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7E03F3C-7BCA-4C4E-8FE0-C57A177B4345}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7E03F3C-7BCA-4C4E-8FE0-C57A177B4345}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

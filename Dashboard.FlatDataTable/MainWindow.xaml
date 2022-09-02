@@ -8,6 +8,7 @@
     Height="720"
     AllowsTransparency="True"
     Background="Transparent"
+    DataContext="{Binding Source={StaticResource Locator}, Path=Main}"
     WindowStartupLocation="CenterScreen"
     WindowStyle="None">
 
@@ -280,6 +281,7 @@
                     Grid.Row="5"
                     CellStyle="{DynamicResource DataGridCellStyle1}"
                     ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}"
+                    ItemsSource="{Binding Members}"
                     RowStyle="{DynamicResource DataGridRowStyle1}"
                     Style="{DynamicResource DataGridStyle1}">
 
