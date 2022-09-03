@@ -2,6 +2,8 @@
     x:Class="Dashboard.FitnessApp.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+    xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
     Width="1280"
     Height="760"
     AllowsTransparency="True"
@@ -16,5 +18,41 @@
         BorderBrush="#EBEDF3"
         BorderThickness="2"
         CornerRadius="40"
-        MouseDown="Border_MouseDown" />
+        MouseDown="Border_MouseDown">
+        <Border CornerRadius="40">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0, 0" EndPoint="0, 1">
+                    <GradientStop Offset="0" Color="#FEFEFE" />
+                    <GradientStop Offset="1" Color="#EDEDEF" />
+                </LinearGradientBrush>
+            </Border.Background>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="130" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="260" />
+                </Grid.ColumnDefinitions>
+
+                <!--  Left Menu  -->
+                <Border
+                    Margin="20"
+                    Background="#7163BA"
+                    CornerRadius="30">
+                    <Grid>
+                        <StackPanel VerticalAlignment="Top">
+                            <Button>
+                                <Icon:PackIconMaterial Kind="BellCheckOutline" />
+                            </Button>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+
+                <!--  Main Section  -->
+
+
+            </Grid>
+
+        </Border>
+    </Border>
 </Window>
