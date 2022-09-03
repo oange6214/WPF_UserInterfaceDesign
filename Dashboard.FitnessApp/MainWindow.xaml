@@ -41,9 +41,35 @@
                     CornerRadius="30">
                     <Grid>
                         <StackPanel VerticalAlignment="Top">
-                            <Button>
-                                <Icon:PackIconMaterial Kind="BellCheckOutline" />
+                            <Button Style="{StaticResource topMenuButton}">
+                                <Icon:PackIconMaterial Kind="BellCheckOutline" Style="{StaticResource menuButtonIcon}" />
                             </Button>
+
+                            <Separator
+                                Height="0.8"
+                                Margin="20,0,20,10"
+                                Background="#877CC5" />
+
+                            <Button Background="#5A5080" Style="{StaticResource menuButton}">
+                                <Icon:PackIconMaterial Kind="HomeVariant" Style="{StaticResource menuButtonIcon}" />
+                            </Button>
+
+                            <Button Style="{StaticResource menuButton}">
+                                <Icon:PackIconMaterial Kind="FileDocumentEditOutline" Style="{StaticResource menuButtonIcon}" />
+                            </Button>
+
+                            <Button Style="{StaticResource menuButton}">
+                                <Icon:PackIconMaterial Kind="Finance" Style="{StaticResource menuButtonIcon}" />
+                            </Button>
+
+                            <Button Style="{StaticResource menuButton}">
+                                <Icon:PackIconMaterial Kind="MotionPauseOutline" Style="{StaticResource menuButtonIcon}" />
+                            </Button>
+
+                            <Button Style="{StaticResource menuButton}">
+                                <Icon:PackIconMaterial Kind="AlarmMultiple" Style="{StaticResource menuButtonIcon}" />
+                            </Button>
+
                         </StackPanel>
                     </Grid>
                 </Border>
