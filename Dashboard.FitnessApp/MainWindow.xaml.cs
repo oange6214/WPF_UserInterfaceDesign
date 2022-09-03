@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Input;
 
-namespace MusicPlayerApp
+namespace Dashboard.FitnessApp
 {
     public partial class MainWindow : Window
     {
@@ -9,6 +9,7 @@ namespace MusicPlayerApp
         {
             InitializeComponent();
         }
+
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
             if (e.ChangedButton == MouseButton.Left)
