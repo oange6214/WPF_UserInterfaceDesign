@@ -1,0 +1,20 @@
+﻿<UserControl
+    x:Class="TVSettingsApp.UserControls.StorageDesc"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Name="storageDesc">
+
+    <StackPanel Margin="0,10" Orientation="Horizontal">
+        <Border
+            Width="20"
+            Height="20"
+            Margin="0,0,10,0"
+            Background="{Binding ElementName=storageDesc, Path=Color}"
+            CornerRadius="5" />
+
+        <TextBlock
+            FontSize="18"
+            Foreground="White"
+            Text="{Binding ElementName=storageDesc, Path=Title}" />
+    </StackPanel>
+</UserControl>

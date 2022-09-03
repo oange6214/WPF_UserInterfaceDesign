@@ -1,0 +1,46 @@
+﻿<UserControl
+    x:Class="TVSettingsApp.Views.AboutView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Border
+        MaxWidth="800"
+        Margin="50,0"
+        Padding="20,40"
+        HorizontalAlignment="Stretch"
+        VerticalAlignment="Center"
+        Background="#374270"
+        CornerRadius="5">
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel
+                Margin="0,0,15,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center">
+                <TextBlock Style="{StaticResource aboutText}" Text="Manufacture :" />
+                <TextBlock Style="{StaticResource aboutText}" Text="Produce Year :" />
+                <TextBlock Style="{StaticResource aboutText}" Text="Version :" />
+                <TextBlock Style="{StaticResource aboutText}" Text="Country :" />
+                <TextBlock Style="{StaticResource aboutText}" Text="City :" />
+                <TextBlock Style="{StaticResource aboutText}" Text="Address :" />
+            </StackPanel>
+
+            <StackPanel
+                Grid.Column="1"
+                Margin="15,0,0,0"
+                VerticalAlignment="Center">
+                <TextBlock Style="{StaticResource aboutText}" Text="Jed" />
+                <TextBlock Style="{StaticResource aboutText}" Text="2022" />
+                <TextBlock Style="{StaticResource aboutText}" Text="1.2.4" />
+                <TextBlock Style="{StaticResource aboutText}" Text="Taiwan" />
+                <TextBlock Style="{StaticResource aboutText}" Text="Taipei" />
+                <TextBlock Style="{StaticResource aboutText}" Text="Street 1 Line 20" />
+            </StackPanel>
+        </Grid>
+    </Border>
+</UserControl>

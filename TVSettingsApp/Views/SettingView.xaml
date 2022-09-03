@@ -1,0 +1,41 @@
+﻿<UserControl
+    x:Class="TVSettingsApp.Views.SettingView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:uc="clr-namespace:TVSettingsApp.UserControls">
+
+    <Grid x:Name="grid" Margin="20">
+        <ScrollViewer
+            Width="{Binding ElementName=grid, Path=ActualWidth}"
+            Padding="0,20"
+            VerticalAlignment="Center"
+            HorizontalScrollBarVisibility="Auto"
+            VerticalScrollBarVisibility="Hidden">
+
+            <StackPanel
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Orientation="Horizontal">
+
+                <uc:Element
+                    Title="Network Setting"
+                    ElementClick="Element_ElementClick"
+                    Icon="Wifi" />
+                <uc:Element
+                    Title="Time Setting"
+                    ElementClick="Element_ElementClick_1"
+                    Icon="Timelapse"
+                    IsActive="True" />
+                <uc:Element
+                    Title="Common"
+                    ElementClick="Element_ElementClick_2"
+                    Icon="Layers" />
+                <uc:Element
+                    Title="About Us"
+                    ElementClick="Element_ElementClick_3"
+                    Icon="Information" />
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>
