@@ -76,6 +76,20 @@
                             </Button>
 
                         </StackPanel>
+
+                        <Separator
+                            Height="0.8"
+                            Margin="20,0,20,90"
+                            VerticalAlignment="Bottom"
+                            Background="#877CC5" />
+
+                        <Button
+                            Margin="0,0,0,25"
+                            VerticalAlignment="Bottom"
+                            Style="{StaticResource menuButton}">
+                            <Icon:PackIconMaterial Kind="LocationExit" Style="{StaticResource menuButtonIcon}" />
+                        </Button>
+
                     </Grid>
                 </Border>
 
@@ -191,12 +205,12 @@
 
                             <!--  Main Chart  -->
                             <lvc:CartesianChart Margin="10" LegendLocation="None">
-                                <lvc:CartesianChart.ToolTip>
+                                <lvc:CartesianChart.DataTooltip>
                                     <lvc:DefaultTooltip
                                         Background="#5A5080"
                                         BulletSize="0"
                                         Foreground="#F4F3F6" />
-                                </lvc:CartesianChart.ToolTip>
+                                </lvc:CartesianChart.DataTooltip>
 
                                 <lvc:CartesianChart.AxisX>
                                     <lvc:Axis
