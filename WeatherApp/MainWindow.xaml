@@ -42,7 +42,7 @@
                         <Image
                             Height="18"
                             Margin="5,0,0,0"
-                            Source="Apps/Images/search.png" />
+                            Source="Assets/Images/search.png" />
                         <TextBlock
                             x:Name="textSearch"
                             MouseDown="textSearch_MouseDown"
@@ -59,7 +59,7 @@
                     <Image
                         Width="140"
                         HorizontalAlignment="Left"
-                        Source="Apps/Images/sun_cloud.png" />
+                        Source="Assets/Images/sun_cloud.png" />
                     <TextBlock
                         Margin="0,20,0,0"
                         FontSize="46"
@@ -78,7 +78,7 @@
                         <Image
                             Width="20"
                             Height="20"
-                            Source="Apps/Images/cloud.png" />
+                            Source="Assets/Images/cloud.png" />
                         <TextBlock
                             Margin="10,0,0,0"
                             VerticalAlignment="Center"
@@ -91,7 +91,7 @@
                         <Image
                             Width="20"
                             Height="20"
-                            Source="Apps/Images/water.png" />
+                            Source="Assets/Images/water.png" />
                         <TextBlock
                             Margin="10,0,0,0"
                             VerticalAlignment="Center"
@@ -108,7 +108,7 @@
                     <Border Padding="0,30" CornerRadius="15">
                         <Border.Background>
                             <ImageBrush
-                                ImageSource="Apps/Images/q1.jpg"
+                                ImageSource="Assets/Images/q1.jpg"
                                 Opacity="0.65"
                                 Stretch="Fill" />
                         </Border.Background>
@@ -167,37 +167,37 @@
                         Day="Sun"
                         MaxNum="16°"
                         MinNum="3°"
-                        Source="Apps/Images/sun.png" />
+                        Source="Assets/Images/sun.png" />
                     <uc:CardDay
                         Day="Mon"
                         MaxNum="16°"
                         MinNum="6°"
-                        Source="Apps/Images/sun_cloud.png" />
+                        Source="Assets/Images/sun_cloud.png" />
                     <uc:CardDay
                         Day="Tue"
                         MaxNum="15°"
                         MinNum="-10°"
-                        Source="Apps/Images/snow.png" />
+                        Source="Assets/Images/snow.png" />
                     <uc:CardDay
                         Day="Wed"
                         MaxNum="1°"
                         MinNum="-1°"
-                        Source="Apps/Images/rain.png" />
+                        Source="Assets/Images/rain.png" />
                     <uc:CardDay
                         Day="Thu"
                         MaxNum="14°"
                         MinNum="3°"
-                        Source="Apps/Images/rain_cloud.png" />
+                        Source="Assets/Images/rain_cloud.png" />
                     <uc:CardDay
                         Day="Fri"
                         MaxNum="26°"
                         MinNum="10°"
-                        Source="Apps/Images/sun.png" />
+                        Source="Assets/Images/sun.png" />
                     <uc:CardDay
                         Day="Sat"
                         MaxNum="3°"
                         MinNum="-3°"
-                        Source="Apps/Images/storm.png" />
+                        Source="Assets/Images/storm.png" />
                 </StackPanel>
 
                 <TextBlock
@@ -262,7 +262,7 @@
                                     Width="25"
                                     Height="25"
                                     Margin="0,0,10,0"
-                                    Source="Apps/Images/dir.png" />
+                                    Source="Assets/Images/dir.png" />
                                 <TextBlock
                                     VerticalAlignment="Center"
                                     FontWeight="SemiBold"
@@ -284,7 +284,7 @@
                                     Width="40"
                                     Height="40"
                                     Margin="0,0,10,0"
-                                    Source="Apps/Images/sunrise.png" />
+                                    Source="Assets/Images/sunrise.png" />
 
                                 <StackPanel>
                                     <TextBlock
@@ -307,7 +307,7 @@
                                     Width="40"
                                     Height="40"
                                     Margin="0,0,10,0"
-                                    Source="Apps/Images/sunset.png" />
+                                    Source="Assets/Images/sunset.png" />
 
                                 <StackPanel>
                                     <TextBlock
@@ -351,7 +351,7 @@
                                     Width="18"
                                     Height="18"
                                     Margin="10,0,0,0"
-                                    Source="Apps/Images/like.png" />
+                                    Source="Assets/Images/like.png" />
                             </StackPanel>
 
                             <Slider
@@ -391,7 +391,7 @@
                                     Width="18"
                                     Height="18"
                                     Margin="10,0,0,0"
-                                    Source="Apps/Images/happy.png" />
+                                    Source="Assets/Images/happy.png" />
                             </StackPanel>
 
                             <Slider
@@ -431,7 +431,7 @@
                                     Width="18"
                                     Height="18"
                                     Margin="10,0,0,0"
-                                    Source="Apps/Images/dislike.png" />
+                                    Source="Assets/Images/dislike.png" />
                             </StackPanel>
 
                             <Slider

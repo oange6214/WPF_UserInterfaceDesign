@@ -276,22 +276,22 @@
                     <!--  Person Items  -->
                     <uc:Item
                         Title="Cole Strickland"
-                        Image="Apps/Images/p1.png"
+                        Image="Assets/Images/p1.png"
                         Message="Okay, Nice work"
                         MessageCount="2"
                         Color="#73AFFF" />
                     <uc:Item
                         Title="Reza Asadi"
-                        Image="Apps/Images/p2.png"
+                        Image="Assets/Images/p2.png"
                         Message="Plz share those recap to me"
                         Visible="Collapsed" />
                     <uc:Item
                         Title="Mary"
-                        Image="Apps/Images/p3.png"
+                        Image="Assets/Images/p3.png"
                         Message="You can check it now" />
                     <uc:Item
                         Title="Lillian Davis"
-                        Image="Apps/Images/p4.png"
+                        Image="Assets/Images/p4.png"
                         Message="OMG !!!"
                         MessageCount="3"
                         Color="#5AC795" />
@@ -337,9 +337,9 @@
                         HorizontalAlignment="Right"
                         Orientation="Horizontal">
 
-                        <uc:UserImage Margin="0,0,-15,0" Image="/Apps/Images/p2.png" />
-                        <uc:UserImage Margin="0,0,-15,0" Image="/Apps/Images/p3.png" />
-                        <uc:UserImage Image="/Apps/Images/p4.png" />
+                        <uc:UserImage Margin="0,0,-15,0" Image="/Assets/Images/p2.png" />
+                        <uc:UserImage Margin="0,0,-15,0" Image="/Assets/Images/p3.png" />
+                        <uc:UserImage Image="/Assets/Images/p4.png" />
 
                         <TextBlock
                             Margin="7,0"
@@ -364,7 +364,7 @@
 
                     <uc:ChatSeprator Title="Yesterday" />
 
-                    <uc:UserChat Image="Apps/Images/p1.png" Username="Maud Carson" />
+                    <uc:UserChat Image="Assets/Images/p1.png" Username="Maud Carson" />
 
                     <uc:MessageChat Message="Hello my friends" Color="#FF82A3" />
 
@@ -377,7 +377,7 @@
                     <TextBlock Style="{StaticResource timeTextRight}" Text="4:15 PM" />
 
 
-                    <uc:UserChat Image="Apps/Images/p3.png" Username="Mary" />
+                    <uc:UserChat Image="Assets/Images/p3.png" Username="Mary" />
 
                     <uc:MessageChat Message="Can you share your opinion?" Color="#C490FF" />
 
@@ -386,7 +386,7 @@
 
                     <uc:ChatSeprator Title="Today" />
 
-                    <uc:UserChat Image="Apps/Images/p4.png" Username="Cole Strickland" />
+                    <uc:UserChat Image="Assets/Images/p4.png" Username="Cole Strickland" />
 
                     <uc:MessageChat Message="Yes Russell, just dont talk about it with others." Color="#68CFA3" />
 

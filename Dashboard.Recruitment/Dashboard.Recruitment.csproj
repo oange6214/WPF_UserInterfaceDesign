@@ -8,15 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Apps\Images\de.png" />
-    <None Remove="Apps\Images\in.png" />
-    <None Remove="Apps\Images\ir.png" />
-    <None Remove="Apps\Images\ru.png" />
-    <None Remove="Apps\Images\us.png" />
+    <None Remove="Assets\Images\de.png" />
+    <None Remove="Assets\Images\in.png" />
+    <None Remove="Assets\Images\ir.png" />
+    <None Remove="Assets\Images\ru.png" />
+    <None Remove="Assets\Images\us.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Page Update="Apps\Resources\MainStyle.xaml">
+    <Page Update="Assets\Resources\MainStyle.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>
     </Page>
@@ -28,19 +28,19 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Apps\Images\de.png">
+    <Resource Include="Assets\Images\de.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\in.png">
+    <Resource Include="Assets\Images\in.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\ir.png">
+    <Resource Include="Assets\Images\ir.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\ru.png">
+    <Resource Include="Assets\Images\ru.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\us.png">
+    <Resource Include="Assets\Images\us.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

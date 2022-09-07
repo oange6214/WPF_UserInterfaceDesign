@@ -39,9 +39,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard.FlatDataTable", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TVSettingsApp", "TVSettingsApp\TVSettingsApp.csproj", "{C7E03F3C-7BCA-4C4E-8FE0-C57A177B4345}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicPlayerApp", "MusicPlayerApp\MusicPlayerApp.csproj", "{1169B592-F1B6-4F4B-AB2D-32BC94D5C8E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicPlayerApp", "MusicPlayerApp\MusicPlayerApp.csproj", "{1169B592-F1B6-4F4B-AB2D-32BC94D5C8E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard.FitnessApp", "Dashboard.FitnessApp\Dashboard.FitnessApp.csproj", "{2DE1C616-2093-45DD-B6A9-036BDE53BDB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard.FitnessApp", "Dashboard.FitnessApp\Dashboard.FitnessApp.csproj", "{2DE1C616-2093-45DD-B6A9-036BDE53BDB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigationSidebarMenu", "NavigationSidebarMenu\NavigationSidebarMenu.csproj", "{281E751D-BF4C-4D61-8B65-5C6BC927345E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +131,10 @@ Global
 		{2DE1C616-2093-45DD-B6A9-036BDE53BDB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DE1C616-2093-45DD-B6A9-036BDE53BDB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DE1C616-2093-45DD-B6A9-036BDE53BDB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{281E751D-BF4C-4D61-8B65-5C6BC927345E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{281E751D-BF4C-4D61-8B65-5C6BC927345E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{281E751D-BF4C-4D61-8B65-5C6BC927345E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{281E751D-BF4C-4D61-8B65-5C6BC927345E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

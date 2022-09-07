@@ -8,13 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Apps\Images\m1.jpg" />
-    <None Remove="Apps\Images\m2.jpg" />
-    <None Remove="Apps\Images\m3.jpg" />
-    <None Remove="Apps\Images\u1.png" />
-    <None Remove="Apps\Images\u2.png" />
-    <None Remove="Apps\Images\u3.png" />
-    <None Remove="Apps\Images\u4.png" />
+    <None Remove="Assets\Images\m1.jpg" />
+    <None Remove="Assets\Images\m2.jpg" />
+    <None Remove="Assets\Images\m3.jpg" />
+    <None Remove="Assets\Images\u1.png" />
+    <None Remove="Assets\Images\u2.png" />
+    <None Remove="Assets\Images\u3.png" />
+    <None Remove="Assets\Images\u4.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,32 +22,32 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Page Update="Apps\Resources\MainStyle.xaml">
+    <Page Update="Assets\Resources\MainStyle.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Apps\Images\m1.jpg">
+    <Resource Include="Assets\Images\m1.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\m2.jpg">
+    <Resource Include="Assets\Images\m2.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\m3.jpg">
+    <Resource Include="Assets\Images\m3.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\u1.png">
+    <Resource Include="Assets\Images\u1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\u2.png">
+    <Resource Include="Assets\Images\u2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\u3.png">
+    <Resource Include="Assets\Images\u3.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\u4.png">
+    <Resource Include="Assets\Images\u4.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

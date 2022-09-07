@@ -8,14 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Page Update="Apps\Resources\MainStyle.xaml">
+    <Page Update="Assets\Resources\MainStyle.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Apps\Images\" />
+    <Folder Include="Assets\Images\" />
   </ItemGroup>
 
   <ItemGroup>

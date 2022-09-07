@@ -61,7 +61,7 @@
                             DockPanel.Dock="Top">
                             <Ellipse>
                                 <Ellipse.Fill>
-                                    <ImageBrush ImageSource="Apps/Images/u1.png" />
+                                    <ImageBrush ImageSource="Assets/Images/u1.png" />
                                 </Ellipse.Fill>
                             </Ellipse>
                         </Border>

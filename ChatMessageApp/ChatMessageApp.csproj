@@ -8,10 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Apps\Images\p1.png" />
-    <None Remove="Apps\Images\p2.png" />
-    <None Remove="Apps\Images\p3.png" />
-    <None Remove="Apps\Images\p4.png" />
+    <None Remove="Assets\Images\p1.png" />
+    <None Remove="Assets\Images\p2.png" />
+    <None Remove="Assets\Images\p3.png" />
+    <None Remove="Assets\Images\p4.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,22 +19,22 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Apps\Images\p1.png">
+    <Resource Include="Assets\Images\p1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\p2.png">
+    <Resource Include="Assets\Images\p2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\p3.png">
+    <Resource Include="Assets\Images\p3.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\p4.png">
+    <Resource Include="Assets\Images\p4.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
 
   <ItemGroup>
-    <Page Update="Apps\Resources\MainStyle.xaml">
+    <Page Update="Assets\Resources\MainStyle.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>
     </Page>

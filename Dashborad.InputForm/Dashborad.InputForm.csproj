@@ -8,11 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Apps\Images\q1.jpg" />
-    <None Remove="Apps\Images\q2.jpg" />
-    <None Remove="Apps\Images\q3.jpg" />
-    <None Remove="Apps\Images\q4.jpg" />
-    <None Remove="Apps\Images\q5.jpg" />
+    <None Remove="Assets\Images\q1.jpg" />
+    <None Remove="Assets\Images\q2.jpg" />
+    <None Remove="Assets\Images\q3.jpg" />
+    <None Remove="Assets\Images\q4.jpg" />
+    <None Remove="Assets\Images\q5.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,25 +20,25 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Apps\Images\q1.jpg">
+    <Resource Include="Assets\Images\q1.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\q2.jpg">
+    <Resource Include="Assets\Images\q2.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\q3.jpg">
+    <Resource Include="Assets\Images\q3.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\q4.jpg">
+    <Resource Include="Assets\Images\q4.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\q5.jpg">
+    <Resource Include="Assets\Images\q5.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
 
   <ItemGroup>
-    <Page Update="Apps\Resources\MainStyle.xaml">
+    <Page Update="Assets\Resources\MainStyle.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>
     </Page>

@@ -30,12 +30,12 @@
             <Image
                 Height="30"
                 Margin="0,25"
-                Source="Apps/Images/instagram.png" />
+                Source="Assets/Images/instagram.png" />
 
             <uc:Profile
                 PaddingNum="5"
                 Size="100"
-                Source="Apps/Images/user.png" />
+                Source="Assets/Images/user.png" />
             <TextBlock
                 Margin="0,10,0,5"
                 FontSize="20"
@@ -74,49 +74,49 @@
 
             <Button Style="{StaticResource activeMenuButton}">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="Apps/Images/home.png" Style="{StaticResource menuButtonIcon}" />
+                    <Image Source="Assets/Images/home.png" Style="{StaticResource menuButtonIcon}" />
                     <TextBlock VerticalAlignment="Center" Text="Feed" />
                 </StackPanel>
             </Button>
 
             <Button Style="{StaticResource menuButton}">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="Apps/Images/explore.png" Style="{StaticResource menuButtonIcon}" />
+                    <Image Source="Assets/Images/explore.png" Style="{StaticResource menuButtonIcon}" />
                     <TextBlock VerticalAlignment="Center" Text="Explore" />
                 </StackPanel>
             </Button>
 
             <Button Style="{StaticResource menuButton}">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="Apps/Images/notification.png" Style="{StaticResource menuButtonIcon}" />
+                    <Image Source="Assets/Images/notification.png" Style="{StaticResource menuButtonIcon}" />
                     <TextBlock VerticalAlignment="Center" Text="Notifications" />
                 </StackPanel>
             </Button>
 
             <Button Style="{StaticResource menuButton}">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="Apps/Images/message.png" Style="{StaticResource menuButtonIcon}" />
+                    <Image Source="Assets/Images/message.png" Style="{StaticResource menuButtonIcon}" />
                     <TextBlock VerticalAlignment="Center" Text="Messages" />
                 </StackPanel>
             </Button>
 
             <Button Style="{StaticResource menuButton}">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="Apps/Images/direct.png" Style="{StaticResource menuButtonIcon}" />
+                    <Image Source="Assets/Images/direct.png" Style="{StaticResource menuButtonIcon}" />
                     <TextBlock VerticalAlignment="Center" Text="Direct" />
                 </StackPanel>
             </Button>
 
             <Button Style="{StaticResource menuButton}">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="Apps/Images/stats.png" Style="{StaticResource menuButtonIcon}" />
+                    <Image Source="Assets/Images/stats.png" Style="{StaticResource menuButtonIcon}" />
                     <TextBlock VerticalAlignment="Center" Text="Stats" />
                 </StackPanel>
             </Button>
 
             <Button Style="{StaticResource menuButton}">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="Apps/Images/setting.png" Style="{StaticResource menuButtonIcon}" />
+                    <Image Source="Assets/Images/setting.png" Style="{StaticResource menuButtonIcon}" />
                     <TextBlock VerticalAlignment="Center" Text="Settings" />
                 </StackPanel>
             </Button>
@@ -128,7 +128,7 @@
 
             <Button Style="{StaticResource menuButton}">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="Apps/Images/logout.png" Style="{StaticResource menuButtonIcon}" />
+                    <Image Source="Assets/Images/logout.png" Style="{StaticResource menuButtonIcon}" />
                     <TextBlock VerticalAlignment="Center" Text="Logout" />
                 </StackPanel>
             </Button>
@@ -154,7 +154,7 @@
                         <Image
                             Height="20"
                             Margin="5,0,0,0"
-                            Source="Apps/Images/explore.png" />
+                            Source="Assets/Images/explore.png" />
                         <TextBlock
                             x:Name="textSearch"
                             MouseDown="textSearch_MouseDown"
@@ -169,11 +169,11 @@
 
                 <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
                     <Button Style="{StaticResource roundButton}">
-                        <Image Width="22" Source="Apps/Images/notification.png" />
+                        <Image Width="22" Source="Assets/Images/notification.png" />
                     </Button>
 
                     <Button Style="{StaticResource roundButton}">
-                        <Image Width="21" Source="Apps/Images/message.png" />
+                        <Image Width="21" Source="Assets/Images/message.png" />
                     </Button>
 
                     <Button Style="{StaticResource addButton}">
@@ -181,7 +181,7 @@
                             <Image
                                 Width="23"
                                 Margin="0,0,7,0"
-                                Source="Apps/Images/Add.png" />
+                                Source="Assets/Images/Add.png" />
                             <TextBlock VerticalAlignment="Center" Text="Add Post" />
                         </StackPanel>
                     </Button>
@@ -212,47 +212,47 @@
                     <uc:Profile
                         PaddingNum="5"
                         Size="70"
-                        Source="Apps/Images/p1.png" />
+                        Source="Assets/Images/p1.png" />
                     <uc:Profile
                         Margin="10,0,0,0"
                         PaddingNum="5"
                         Size="70"
-                        Source="Apps/Images/p2.png" />
+                        Source="Assets/Images/p2.png" />
                     <uc:Profile
                         Margin="10,0,0,0"
                         PaddingNum="5"
                         Size="70"
-                        Source="Apps/Images/p3.png" />
+                        Source="Assets/Images/p3.png" />
                     <uc:Profile
                         Margin="10,0,0,0"
                         PaddingNum="5"
                         Size="70"
-                        Source="Apps/Images/p4.png" />
+                        Source="Assets/Images/p4.png" />
                     <uc:Profile
                         Margin="10,0,0,0"
                         PaddingNum="5"
                         Size="70"
-                        Source="Apps/Images/p5.png" />
+                        Source="Assets/Images/p5.png" />
                     <uc:Profile
                         Margin="10,0,0,0"
                         PaddingNum="5"
                         Size="70"
-                        Source="Apps/Images/p6.png" />
+                        Source="Assets/Images/p6.png" />
                     <uc:Profile
                         Margin="10,0,0,0"
                         PaddingNum="5"
                         Size="70"
-                        Source="Apps/Images/p7.png" />
+                        Source="Assets/Images/p7.png" />
                     <uc:Profile
                         Margin="10,0,0,0"
                         PaddingNum="5"
                         Size="70"
-                        Source="Apps/Images/p8.png" />
+                        Source="Assets/Images/p8.png" />
                     <uc:Profile
                         Margin="10,0,0,0"
                         PaddingNum="5"
                         Size="70"
-                        Source="Apps/Images/p9.png" />
+                        Source="Assets/Images/p9.png" />
 
                 </StackPanel>
             </ScrollViewer>
@@ -288,81 +288,81 @@
                 <uc:Post
                     Comments="49"
                     Likes="6.2k"
-                    PostSource="Apps/Images/q1.jpg"
+                    PostSource="Assets/Images/q1.jpg"
                     ProfileName="Jed"
-                    ProfileSource="Apps/Images/p7.png" />
+                    ProfileSource="Assets/Images/p7.png" />
                 <uc:Post
                     Comments="10"
                     Likes="7.9k"
-                    PostSource="Apps/Images/q2.jpg"
+                    PostSource="Assets/Images/q2.jpg"
                     ProfileName="Jed"
-                    ProfileSource="Apps/Images/p7.png" />
+                    ProfileSource="Assets/Images/p7.png" />
                 <uc:Post
                     Comments="21"
                     Likes="1.6k"
-                    PostSource="Apps/Images/q3.jpg"
+                    PostSource="Assets/Images/q3.jpg"
                     ProfileName="James"
-                    ProfileSource="Apps/Images/p7.png" />
+                    ProfileSource="Assets/Images/p7.png" />
                 <uc:Post
                     Comments="57"
                     Likes="8.1k"
-                    PostSource="Apps/Images/q4.jpg"
+                    PostSource="Assets/Images/q4.jpg"
                     ProfileName="Jed"
-                    ProfileSource="Apps/Images/p7.png" />
+                    ProfileSource="Assets/Images/p7.png" />
                 <uc:Post
                     Comments="61"
                     Likes="5.4k"
-                    PostSource="Apps/Images/q5.jpg"
+                    PostSource="Assets/Images/q5.jpg"
                     ProfileName="Jed"
-                    ProfileSource="Apps/Images/p7.png" />
+                    ProfileSource="Assets/Images/p7.png" />
                 <uc:Post
                     Comments="87"
                     Likes="1.5k"
-                    PostSource="Apps/Images/q6.jpg"
+                    PostSource="Assets/Images/q6.jpg"
                     ProfileName="James"
-                    ProfileSource="Apps/Images/p7.png" />
+                    ProfileSource="Assets/Images/p7.png" />
                 <uc:Post
                     Comments="43"
                     Likes="3.9k"
-                    PostSource="Apps/Images/q7.jpg"
+                    PostSource="Assets/Images/q7.jpg"
                     ProfileName="James"
-                    ProfileSource="Apps/Images/p7.png" />
+                    ProfileSource="Assets/Images/p7.png" />
                 <uc:Post
                     Comments="27"
                     Likes="9.1k"
-                    PostSource="Apps/Images/q8.jpg"
+                    PostSource="Assets/Images/q8.jpg"
                     ProfileName="James"
-                    ProfileSource="Apps/Images/p7.png" />
+                    ProfileSource="Assets/Images/p7.png" />
                 <uc:Post
                     Comments="67"
                     Likes="8.5k"
-                    PostSource="Apps/Images/q9.jpg"
+                    PostSource="Assets/Images/q9.jpg"
                     ProfileName="James"
-                    ProfileSource="Apps/Images/p7.png" />
+                    ProfileSource="Assets/Images/p7.png" />
                 <uc:Post
                     Comments="12"
                     Likes="6.7k"
-                    PostSource="Apps/Images/q10.jpg"
+                    PostSource="Assets/Images/q10.jpg"
                     ProfileName="Jed"
-                    ProfileSource="Apps/Images/p7.png" />
+                    ProfileSource="Assets/Images/p7.png" />
                 <uc:Post
                     Comments="65"
                     Likes="9.3k"
-                    PostSource="Apps/Images/q11.jpg"
+                    PostSource="Assets/Images/q11.jpg"
                     ProfileName="Jed"
-                    ProfileSource="Apps/Images/p7.png" />
+                    ProfileSource="Assets/Images/p7.png" />
                 <uc:Post
                     Comments="23"
                     Likes="4.7k"
-                    PostSource="Apps/Images/q12.jpg"
+                    PostSource="Assets/Images/q12.jpg"
                     ProfileName="Jed"
-                    ProfileSource="Apps/Images/p7.png" />
+                    ProfileSource="Assets/Images/p7.png" />
                 <uc:Post
                     Comments="47"
                     Likes="6.1k"
-                    PostSource="Apps/Images/q13.jpg"
+                    PostSource="Assets/Images/q13.jpg"
                     ProfileName="Jed"
-                    ProfileSource="Apps/Images/p7.png" />
+                    ProfileSource="Assets/Images/p7.png" />
 
             </WrapPanel>
         </ScrollViewer>

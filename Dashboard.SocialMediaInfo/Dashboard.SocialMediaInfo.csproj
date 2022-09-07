@@ -8,9 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Apps\Images\close.png" />
-    <None Remove="Apps\Images\minimizing.png" />
-    <None Remove="Apps\Images\user.png" />
+    <None Remove="Assets\Images\close.png" />
+    <None Remove="Assets\Images\minimizing.png" />
+    <None Remove="Assets\Images\user.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,13 +18,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Apps\Images\close.png">
+    <Resource Include="Assets\Images\close.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\minimizing.png">
+    <Resource Include="Assets\Images\minimizing.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\user.png">
+    <Resource Include="Assets\Images\user.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

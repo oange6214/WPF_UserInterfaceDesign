@@ -66,9 +66,9 @@
             <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
                 <Image
                     Margin="0,0,15,0"
-                    Source="Apps/Images/minimizing.png"
+                    Source="Assets/Images/minimizing.png"
                     Style="{StaticResource iconApp}" />
-                <Image Source="Apps/Images/close.png" Style="{StaticResource iconApp}" />
+                <Image Source="Assets/Images/close.png" Style="{StaticResource iconApp}" />
             </StackPanel>
         </Grid>
 
@@ -208,7 +208,7 @@
                             Margin="15,0,15,0"
                             CornerRadius="30">
                             <Border.Background>
-                                <ImageBrush ImageSource="Apps/Images/user.png" Stretch="Fill" />
+                                <ImageBrush ImageSource="Assets/Images/user.png" Stretch="Fill" />
                             </Border.Background>
                         </Border>
 

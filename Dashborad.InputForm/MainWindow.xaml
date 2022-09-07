@@ -118,7 +118,7 @@
                         CornerRadius="100">
                         <Ellipse Width="80" Height="80">
                             <Ellipse.Fill>
-                                <ImageBrush ImageSource="Apps/Images/q1.jpg" Stretch="UniformToFill" />
+                                <ImageBrush ImageSource="Assets/Images/q1.jpg" Stretch="UniformToFill" />
                             </Ellipse.Fill>
                         </Ellipse>
                     </Border>
@@ -143,31 +143,31 @@
                     <!--  Cards  -->
                     <uc:Card
                         Title="Payment Gateways"
-                        Image="Apps/Images/q1.jpg"
+                        Image="Assets/Images/q1.jpg"
                         IsActive="True"
                         Number="1"
                         Time="3 min" />
                     <uc:Card
                         Title="Integration"
-                        Image="Apps/Images/q2.jpg"
+                        Image="Assets/Images/q2.jpg"
                         IsActive="True"
                         Number="2"
                         Time="5 min" />
                     <uc:Card
                         Title="Tax"
-                        Image="Apps/Images/q3.jpg"
+                        Image="Assets/Images/q3.jpg"
                         IsActive="True"
                         Number="3"
                         Time="2 min" />
                     <uc:Card
                         Title="Policies"
-                        Image="Apps/Images/q4.jpg"
+                        Image="Assets/Images/q4.jpg"
                         IsActive="True"
                         Number="4"
                         Time="1 min" />
                     <uc:Card
                         Title="Shipping"
-                        Image="Apps/Images/q5.jpg"
+                        Image="Assets/Images/q5.jpg"
                         IsActive="True"
                         Number="5"
                         Time="1 min" />
@@ -234,7 +234,7 @@
                                     CornerRadius="50">
                                     <Ellipse Width="40" Height="40">
                                         <Ellipse.Fill>
-                                            <ImageBrush ImageSource="Apps/Images/q1.jpg" />
+                                            <ImageBrush ImageSource="Assets/Images/q1.jpg" />
                                         </Ellipse.Fill>
                                     </Ellipse>
                                 </Border>

@@ -69,11 +69,11 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Center">
             <Button Style="{StaticResource buttonCounter}">
-                <Image Source="pack://application:,,,/FlatShoppingCart;component/Apps/Images/add.png" />
+                <Image Source="pack://application:,,,/FlatShoppingCart;component/Assets/Images/add.png" />
             </Button>
 
             <Button Margin="0,5,0,0" Style="{StaticResource buttonCounter}">
-                <Image Source="pack://application:,,,/FlatShoppingCart;component/Apps/Images/low.png" />
+                <Image Source="pack://application:,,,/FlatShoppingCart;component/Assets/Images/low.png" />
             </Button>
         </StackPanel>
 
@@ -87,7 +87,7 @@
         <Button Grid.Column="6" Style="{StaticResource buttonRemove}">
             <Image
                 Width="18"
-                Source="pack://application:,,,/FlatShoppingCart;component/Apps/Images/remove.png"
+                Source="pack://application:,,,/FlatShoppingCart;component/Assets/Images/remove.png"
                 Style="{StaticResource icon}" />
         </Button>
     </Grid>

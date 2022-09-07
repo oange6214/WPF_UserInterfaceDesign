@@ -24,7 +24,7 @@
             Grid.Column="1"
             Panel.ZIndex="1"
             MouseUp="Image_MouseUp"
-            Source="Apps/Images/close.png"
+            Source="Assets/Images/close.png"
             Style="{StaticResource imgClose}" />
 
         <Border CornerRadius="10 0 0 10">
@@ -83,21 +83,21 @@
                         <Image
                             Width="20"
                             Height="20"
-                            Source="Apps/Images/google.png" />
+                            Source="Assets/Images/google.png" />
                     </Button>
 
                     <Button Style="{StaticResource buttonCircle}">
                         <Image
                             Width="20"
                             Height="20"
-                            Source="Apps/Images/facebook.png" />
+                            Source="Assets/Images/facebook.png" />
                     </Button>
 
                     <Button Style="{StaticResource buttonCircle}">
                         <Image
                             Width="20"
                             Height="20"
-                            Source="Apps/Images/linkedin.png" />
+                            Source="Assets/Images/linkedin.png" />
                     </Button>
                 </StackPanel>
 
@@ -118,7 +118,7 @@
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
 
-                        <Image Height="20" Source="Apps/Images/Email.png" />
+                        <Image Height="20" Source="Assets/Images/Email.png" />
                         <TextBlock
                             x:Name="textEmail"
                             MouseDown="textEmail_MouseDown"
@@ -142,7 +142,7 @@
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
 
-                        <Image Height="20" Source="Apps/Images/Lock.png" />
+                        <Image Height="20" Source="Assets/Images/Lock.png" />
                         <TextBlock
                             x:Name="textPassword"
                             MouseDown="textPassword_MouseDown"

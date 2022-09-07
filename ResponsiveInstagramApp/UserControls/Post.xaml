@@ -38,13 +38,13 @@
                 HorizontalAlignment="Right"
                 Orientation="Horizontal">
                 <Button Margin="0,0,2,0" Style="{StaticResource roundButton}">
-                    <Image Width="23" Source="../Apps/Images/like.png" />
+                    <Image Width="23" Source="../Assets/Images/like.png" />
                 </Button>
 
                 <TextBlock VerticalAlignment="Center" Text="{Binding ElementName=post, Path=Likes}" />
 
                 <Button Margin="8,0,2,0" Style="{StaticResource roundButton}">
-                    <Image Width="21" Source="../Apps/Images/comment.png" />
+                    <Image Width="21" Source="../Assets/Images/comment.png" />
                 </Button>
 
                 <TextBlock VerticalAlignment="Center" Text="{Binding ElementName=post, Path=Comments}" />

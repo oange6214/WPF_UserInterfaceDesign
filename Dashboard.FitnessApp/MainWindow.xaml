@@ -157,7 +157,7 @@
                             Height="45"
                             Margin="15,0,7,0">
                             <Ellipse.Fill>
-                                <ImageBrush ImageSource="Apps/Images/p1.png" />
+                                <ImageBrush ImageSource="Assets/Images/p1.png" />
                             </Ellipse.Fill>
                         </Ellipse>
                     </Grid>
@@ -529,27 +529,27 @@
                             <uc:UserCard
                                 Title="Weekly Bicycle"
                                 FullName="Max Stone"
-                                Image="Apps/Images/p1.png"
+                                Image="Assets/Images/p1.png"
                                 Time="10 min ago" />
                             <uc:UserCard
                                 Title="Slow Jogging"
                                 FullName="Reza Gordon"
-                                Image="Apps/Images/p2.png"
+                                Image="Assets/Images/p2.png"
                                 Time="22 min ago" />
                             <uc:UserCard
                                 Title="Morning Swim"
                                 FullName="John Doe"
-                                Image="Apps/Images/p3.png"
+                                Image="Assets/Images/p3.png"
                                 Time="32 min ago" />
                             <uc:UserCard
                                 Title="Quick Sprint"
                                 FullName="Cody Bryan"
-                                Image="Apps/Images/p4.png"
+                                Image="Assets/Images/p4.png"
                                 Time="37 min ago" />
                             <uc:UserCard
                                 Title="Hiking"
                                 FullName="Levi Pattrick"
-                                Image="Apps/Images/p5.png"
+                                Image="Assets/Images/p5.png"
                                 Time="45 min ago" />
                         </StackPanel>
 
@@ -577,7 +577,7 @@
                             Margin="25,10"
                             CornerRadius="10">
                             <Border.Background>
-                                <ImageBrush ImageSource="Apps/Images/map1.png" />
+                                <ImageBrush ImageSource="Assets/Images/map1.png" />
                             </Border.Background>
                         </Border>
 

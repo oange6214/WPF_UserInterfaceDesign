@@ -23,7 +23,7 @@
                 Padding="10"
                 Background="#3256F1"
                 CornerRadius="50">
-                <Image Source="../Apps/Images/add.png" />
+                <Image Source="../Assets/Images/add.png" />
             </Border>
         </StackPanel>
     </Button>

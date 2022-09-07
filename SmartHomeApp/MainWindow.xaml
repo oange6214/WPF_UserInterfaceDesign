@@ -77,7 +77,7 @@
                                 </EventTrigger>
                             </Button.Triggers>
 
-                            <Image Width="20" Source="Apps/Images/_home2.png" />
+                            <Image Width="20" Source="Assets/Images/_home2.png" />
                         </Button>
 
                         <Button Style="{StaticResource menuButton}" ToolTip="Bed">
@@ -113,27 +113,27 @@
                                 </EventTrigger>
                             </Button.Triggers>
 
-                            <Image Width="20" Source="Apps/Images/_bed.png" />
+                            <Image Width="20" Source="Assets/Images/_bed.png" />
                         </Button>
 
                         <Button Style="{StaticResource menuButton}" ToolTip="User">
-                            <Image Width="20" Source="Apps/Images/_users.png" />
+                            <Image Width="20" Source="Assets/Images/_users.png" />
                         </Button>
 
                         <Button Style="{StaticResource menuButton}" ToolTip="Shield">
-                            <Image Width="20" Source="Apps/Images/_shield.png" />
+                            <Image Width="20" Source="Assets/Images/_shield.png" />
                         </Button>
 
                         <Button Style="{StaticResource menuButton}" ToolTip="Location">
-                            <Image Width="20" Source="Apps/Images/_location.png" />
+                            <Image Width="20" Source="Assets/Images/_location.png" />
                         </Button>
 
                         <Button Style="{StaticResource menuButton}" ToolTip="Chart">
-                            <Image Width="20" Source="Apps/Images/_chart.png" />
+                            <Image Width="20" Source="Assets/Images/_chart.png" />
                         </Button>
 
                         <Button Style="{StaticResource menuButton}" ToolTip="Setting">
-                            <Image Width="20" Source="Apps/Images/_setting.png" />
+                            <Image Width="20" Source="Assets/Images/_setting.png" />
                         </Button>
                     </StackPanel>
 
@@ -142,7 +142,7 @@
                         VerticalAlignment="Bottom"
                         Style="{StaticResource menuButton}"
                         ToolTip="Logout">
-                        <Image Width="20" Source="Apps/Images/_logout.png" />
+                        <Image Width="20" Source="Assets/Images/_logout.png" />
                     </Button>
                 </Grid>
             </Border>
@@ -157,7 +157,7 @@
                 <Border CornerRadius="25">
                     <Border.Background>
                         <ImageBrush
-                            ImageSource="Apps/Images/p2.jpg"
+                            ImageSource="Assets/Images/p2.jpg"
                             Opacity="0.6"
                             Stretch="Fill" />
                     </Border.Background>
@@ -223,16 +223,16 @@
                                     Grid.Row="0"
                                     Grid.Column="0"
                                     Margin="4"
-                                    ImageOff="Apps/Images/fridge_off.png"
-                                    ImageOn="Apps/Images/fridge_on.png" />
+                                    ImageOff="Assets/Images/fridge_off.png"
+                                    ImageOn="Assets/Images/fridge_on.png" />
 
                                 <uc:Card
                                     Title="Temprature"
                                     Grid.Row="0"
                                     Grid.Column="1"
                                     Margin="4"
-                                    ImageOff="Apps/Images/electric_off.png"
-                                    ImageOn="Apps/Images/electric_on.png"
+                                    ImageOff="Assets/Images/electric_off.png"
+                                    ImageOn="Assets/Images/electric_on.png"
                                     IsChecked="True" />
 
                                 <uc:Card
@@ -240,16 +240,16 @@
                                     Grid.Row="1"
                                     Grid.Column="0"
                                     Margin="4"
-                                    ImageOff="Apps/Images/cordinator_off.png"
-                                    ImageOn="Apps/Images/cordinator_on.png" />
+                                    ImageOff="Assets/Images/cordinator_off.png"
+                                    ImageOn="Assets/Images/cordinator_on.png" />
 
                                 <uc:Card
                                     Title="Lights"
                                     Grid.Row="1"
                                     Grid.Column="1"
                                     Margin="4"
-                                    ImageOff="Apps/Images/light_off.png"
-                                    ImageOn="Apps/Images/light_on.png" />
+                                    ImageOff="Assets/Images/light_off.png"
+                                    ImageOn="Assets/Images/light_on.png" />
 
                             </Grid>
 
@@ -275,7 +275,7 @@
                 <Border CornerRadius="25">
                     <Border.Background>
                         <ImageBrush
-                            ImageSource="Apps/Images/p10.jpg"
+                            ImageSource="Assets/Images/p10.jpg"
                             Opacity="0.6"
                             Stretch="Fill" />
                     </Border.Background>
@@ -350,16 +350,16 @@
                                     Title="Refridgerator"
                                     Grid.Column="0"
                                     Margin="12"
-                                    ImageOff="Apps/Images/fridge_off.png"
-                                    ImageOn="Apps/Images/fridge_on.png"
+                                    ImageOff="Assets/Images/fridge_off.png"
+                                    ImageOn="Assets/Images/fridge_on.png"
                                     IsHorizontal="True" />
 
                                 <uc:Card
                                     Title="Temprature"
                                     Grid.Column="1"
                                     Margin="12"
-                                    ImageOff="Apps/Images/electric_off.png"
-                                    ImageOn="Apps/Images/electric_on.png"
+                                    ImageOff="Assets/Images/electric_off.png"
+                                    ImageOn="Assets/Images/electric_on.png"
                                     IsChecked="True"
                                     IsHorizontal="True" />
 
@@ -367,16 +367,16 @@
                                     Title="Air Conditioner"
                                     Grid.Column="2"
                                     Margin="12"
-                                    ImageOff="Apps/Images/cordinator_off.png"
-                                    ImageOn="Apps/Images/cordinator_on.png"
+                                    ImageOff="Assets/Images/cordinator_off.png"
+                                    ImageOn="Assets/Images/cordinator_on.png"
                                     IsHorizontal="True" />
 
                                 <uc:Card
                                     Title="Lights"
                                     Grid.Column="3"
                                     Margin="12"
-                                    ImageOff="Apps/Images/light_off.png"
-                                    ImageOn="Apps/Images/light_on.png"
+                                    ImageOff="Assets/Images/light_off.png"
+                                    ImageOn="Assets/Images/light_on.png"
                                     IsHorizontal="True" />
 
                             </Grid>

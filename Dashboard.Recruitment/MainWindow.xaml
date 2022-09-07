@@ -368,27 +368,27 @@
                             ScrollViewer.VerticalScrollBarVisibility="Hidden">
                             <uc:Country
                                 CountryName="Germany"
-                                Flag="Apps/Images/de.png"
+                                Flag="Assets/Images/de.png"
                                 IsLevelUp="True"
                                 Price="$" />
                             <uc:Country
                                 CountryName="Russia"
-                                Flag="Apps/Images/ru.png"
+                                Flag="Assets/Images/ru.png"
                                 IsLevelUp="True"
                                 Price="$" />
                             <uc:Country
                                 CountryName="United States"
-                                Flag="Apps/Images/us.png"
+                                Flag="Assets/Images/us.png"
                                 IsLevelUp="True"
                                 Price="$" />
                             <uc:Country
                                 CountryName="India"
-                                Flag="Apps/Images/in.png"
+                                Flag="Assets/Images/in.png"
                                 IsLevelUp="False"
                                 Price="$" />
                             <uc:Country
                                 CountryName="Iran"
-                                Flag="Apps/Images/ir.png"
+                                Flag="Assets/Images/ir.png"
                                 IsLevelUp="True"
                                 Price="$" />
                         </ListView>

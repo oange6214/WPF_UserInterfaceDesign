@@ -31,7 +31,7 @@
                 <Image
                     Width="160"
                     Margin="0,0,0,40"
-                    Source="Apps/Images/user.png" />
+                    Source="Assets/Images/user.png" />
 
                 <TextBlock
                     FontSize="28"
@@ -72,14 +72,14 @@
                     Width="25"
                     Margin="0,4,5,0"
                     MouseDown="CloseWindow_MouseDown"
-                    Source="Apps/Images/close.png"
+                    Source="Assets/Images/close.png"
                     Style="{StaticResource iconApp}" />
                 <Image
                     x:Name="MinimizeWindow"
                     Width="20"
                     Margin="0,7,40,0"
                     MouseDown="MinimizeWindow_MouseDown"
-                    Source="Apps/Images/minimizing.png"
+                    Source="Assets/Images/minimizing.png"
                     Style="{StaticResource iconApp}" />
 
                 <Grid

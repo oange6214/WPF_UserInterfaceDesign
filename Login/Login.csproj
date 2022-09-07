@@ -8,37 +8,37 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Apps\Images\close.png" />
-    <None Remove="Apps\Images\email.png" />
-    <None Remove="Apps\Images\facebook.png" />
-    <None Remove="Apps\Images\google.png" />
-    <None Remove="Apps\Images\linkedin.png" />
-    <None Remove="Apps\Images\lock.png" />
+    <None Remove="Assets\Images\close.png" />
+    <None Remove="Assets\Images\email.png" />
+    <None Remove="Assets\Images\facebook.png" />
+    <None Remove="Assets\Images\google.png" />
+    <None Remove="Assets\Images\linkedin.png" />
+    <None Remove="Assets\Images\lock.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Apps\Images\close.png">
+    <Resource Include="Assets\Images\close.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\email.png">
+    <Resource Include="Assets\Images\email.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\facebook.png">
+    <Resource Include="Assets\Images\facebook.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\google.png">
+    <Resource Include="Assets\Images\google.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\linkedin.png">
+    <Resource Include="Assets\Images\linkedin.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\lock.png">
+    <Resource Include="Assets\Images\lock.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
 
   <ItemGroup>
-    <Page Update="Apps\Resources\LoginStyle.xaml">
+    <Page Update="Assets\Resources\LoginStyle.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>
     </Page>

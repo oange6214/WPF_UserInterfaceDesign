@@ -8,65 +8,65 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Apps\Images\add.png" />
-    <None Remove="Apps\Images\close.png" />
-    <None Remove="Apps\Images\credit.png" />
-    <None Remove="Apps\Images\left.png" />
-    <None Remove="Apps\Images\low.png" />
-    <None Remove="Apps\Images\mastercard.png" />
-    <None Remove="Apps\Images\minimizing.png" />
-    <None Remove="Apps\Images\p1.png" />
-    <None Remove="Apps\Images\p2.png" />
-    <None Remove="Apps\Images\p3.png" />
-    <None Remove="Apps\Images\p4.png" />
-    <None Remove="Apps\Images\remove.png" />
-    <None Remove="Apps\Images\visa.png" />
+    <None Remove="Assets\Images\add.png" />
+    <None Remove="Assets\Images\close.png" />
+    <None Remove="Assets\Images\credit.png" />
+    <None Remove="Assets\Images\left.png" />
+    <None Remove="Assets\Images\low.png" />
+    <None Remove="Assets\Images\mastercard.png" />
+    <None Remove="Assets\Images\minimizing.png" />
+    <None Remove="Assets\Images\p1.png" />
+    <None Remove="Assets\Images\p2.png" />
+    <None Remove="Assets\Images\p3.png" />
+    <None Remove="Assets\Images\p4.png" />
+    <None Remove="Assets\Images\remove.png" />
+    <None Remove="Assets\Images\visa.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Apps\Images\add.png">
+    <Resource Include="Assets\Images\add.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\close.png">
+    <Resource Include="Assets\Images\close.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\credit.png">
+    <Resource Include="Assets\Images\credit.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\left.png">
+    <Resource Include="Assets\Images\left.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\mastercard.png">
+    <Resource Include="Assets\Images\mastercard.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\minimizing.png">
+    <Resource Include="Assets\Images\minimizing.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\p1.png">
+    <Resource Include="Assets\Images\p1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\p2.png">
+    <Resource Include="Assets\Images\p2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\p3.png">
+    <Resource Include="Assets\Images\p3.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\p4.png">
+    <Resource Include="Assets\Images\p4.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\low.png">
+    <Resource Include="Assets\Images\low.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\remove.png">
+    <Resource Include="Assets\Images\remove.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Apps\Images\visa.png">
+    <Resource Include="Assets\Images\visa.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
 
   <ItemGroup>
-    <Page Update="Apps\Resources\MainStyle.xaml">
+    <Page Update="Assets\Resources\MainStyle.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>
     </Page>

@@ -145,7 +145,7 @@
                     <Grid>
                         <Border CornerRadius="20" Opacity="0.07">
                             <Border.Background>
-                                <ImageBrush ImageSource="Apps/Images/u2.png" Stretch="UniformToFill" />
+                                <ImageBrush ImageSource="Assets/Images/u2.png" Stretch="UniformToFill" />
                             </Border.Background>
                         </Border>
 
@@ -218,20 +218,20 @@
                     <!--  Populars  -->
                     <uc:PopularSong
                         Title="My House"
-                        Image="Apps/Images/u2.png"
+                        Image="Assets/Images/u2.png"
                         Time="03:13" />
                     <uc:PopularSong
                         Title="Blank Space"
-                        Image="Apps/Images/u3.png"
+                        Image="Assets/Images/u3.png"
                         IsActive="True"
                         Time="04:02" />
                     <uc:PopularSong
                         Title="Love Story"
-                        Image="Apps/Images/u1.png"
+                        Image="Assets/Images/u1.png"
                         Time="05:04" />
                     <uc:PopularSong
                         Title="Red Home"
-                        Image="Apps/Images/u4.png"
+                        Image="Assets/Images/u4.png"
                         Time="03:27" />
 
                     <TextBlock
@@ -245,12 +245,12 @@
                         <uc:Playlist
                             Title="Glory"
                             Desc="Kutless"
-                            Image="Apps/Images/m1.jpg" />
+                            Image="Assets/Images/m1.jpg" />
                         <uc:Playlist
                             Title="Mitacle"
                             Margin="4,0,0,0"
                             Desc="Fiasder"
-                            Image="Apps/Images/m3.jpg" />
+                            Image="Assets/Images/m3.jpg" />
                     </StackPanel>
                 </StackPanel>
             </Border>
@@ -271,7 +271,7 @@
                         Height="60"
                         Margin="30,0,0,0">
                         <Ellipse.Fill>
-                            <ImageBrush ImageSource="Apps/Images/m2.jpg" />
+                            <ImageBrush ImageSource="Assets/Images/m2.jpg" />
                         </Ellipse.Fill>
                     </Ellipse>
 

@@ -191,7 +191,7 @@
                                 <Image
                                     Width="40"
                                     Height="40"
-                                    Source="Apps/Images/u4.png" />
+                                    Source="Assets/Images/u4.png" />
                             </Border>
 
                             <StackPanel VerticalAlignment="Center">
@@ -248,21 +248,21 @@
                         Title="Sales"
                         Grid.Column="0"
                         Amount="3"
-                        Image="Apps/Images/sale.png"
+                        Image="Assets/Images/sale.png"
                         SubTitle="Compared To ($2646 Last Month)" />
 
                     <uc:InfoCard
                         Title="Purchase"
                         Grid.Column="1"
                         Amount="87"
-                        Image="Apps/Images/purchase.png"
+                        Image="Assets/Images/purchase.png"
                         SubTitle="Compared To ($1405 Last Month)" />
 
                     <uc:InfoCard
                         Title="Return"
                         Grid.Column="2"
                         Amount="5"
-                        Image="Apps/Images/return.png"
+                        Image="Assets/Images/return.png"
                         SubTitle="Compared To ($2646 Last Month)" />
 
                 </Grid>
@@ -385,18 +385,18 @@
                             <uc:UserCard
                                 Title="Reza Asadi"
                                 DownPrice="$337"
-                                Image="Apps/Images/u1.png"
+                                Image="Assets/Images/u1.png"
                                 IsActive="True"
                                 UpPrice="$1256" />
                             <uc:UserCard
                                 Title="Firman Jabber"
                                 DownPrice="789"
-                                Image="Apps/Images/u4.png"
+                                Image="Assets/Images/u4.png"
                                 UpPrice="1049" />
                             <uc:UserCard
                                 Title="John Doe"
                                 DownPrice="459"
-                                Image="Apps/Images/u2.png"
+                                Image="Assets/Images/u2.png"
                                 UpPrice="1105" />
                         </StackPanel>
                     </Border>
