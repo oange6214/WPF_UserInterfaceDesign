@@ -18,6 +18,7 @@
     <None Remove="Assets\Icons\img_signout.png" />
     <None Remove="Assets\Icons\tgBtn_default.png" />
     <None Remove="Assets\Icons\tgBtn_MouseOver.png" />
+    <None Remove="Assets\Images\img_background.jpg" />
     <None Remove="Assets\Images\img_background.png" />
   </ItemGroup>
 
@@ -52,9 +53,19 @@
     <Resource Include="Assets\Icons\tgBtn_MouseOver.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Assets\Images\img_background.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Assets\Images\img_background.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Assets\Resources\MainStyle.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 
 </Project>

@@ -14,12 +14,51 @@
     WindowStyle="None"
     mc:Ignorable="d">
 
-
     <Grid>
 
         <!--  Background Color  -->
-
         <Grid Background="Black">
+
+            <!--  Background Image  -->
+            <Grid x:Name="BG" PreviewMouseLeftButtonDown="BG_PreviewMouseLeftButtonDown">
+
+                <Grid.Background>
+                    <ImageBrush
+                        x:Name="img_bg"
+                        ImageSource="Assets/Images/img_background.jpg"
+                        Stretch="Fill" />
+                </Grid.Background>
+
+            </Grid>
+
+            <!--  App Close Button  -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="60" />
+                    <ColumnDefinition Width="30" />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Button
+                    x:Name="CloseBtn"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Width="40"
+                    Height="40"
+                    BorderThickness="0"
+                    Click="CloseBtn_Click"
+                    Style="{StaticResource closeButton}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Assets/Icons/closeBtn_default.png" />
+                    </Button.Background>
+                </Button>
+            </Grid>
 
             <!--  Navigation Panel  -->
             <Grid
@@ -28,15 +67,35 @@
                 HorizontalAlignment="Left"
                 Background="#2E333A">
 
-
                 <StackPanel x:Name="st_panel">
 
                     <!--  Grid for the Menu Toggle Button  -->
-
                     <Grid Height="90">
 
-                        <!--  Toggle Button  -->
+                        <!--  Menu title text  -->
+                        <TextBlock
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            Margin="73,-20,0,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Background="Transparent"
+                            FontSize="22"
+                            Foreground="White"
+                            Style="{StaticResource fontStyle}"
+                            Text="M E N U">
+                            <!--  Shadow Effect  -->
+                            <TextBlock.Effect>
+                                <DropShadowEffect
+                                    BlurRadius="10"
+                                    Direction="-90"
+                                    ShadowDepth="1"
+                                    Color="White" />
+                            </TextBlock.Effect>
 
+                        </TextBlock>
+
+                        <!--  Toggle Button  -->
                         <ToggleButton
                             x:Name="Tg_Btn"
                             Grid.Column="0"
@@ -45,26 +104,224 @@
                             Margin="18,-20,0,0"
                             HorizontalAlignment="Left"
                             VerticalAlignment="Center"
-                            BorderThickness="0">
+                            BorderThickness="0"
+                            Checked="Tg_Btn_Checked"
+                            Style="{StaticResource toggleButtonStyle}"
+                            Unchecked="Tg_Btn_Unchecked">
 
                             <!--  Toggle button default background image  -->
                             <ToggleButton.Background>
                                 <ImageBrush ImageSource="Assets/Icons/tgBtn_default.png" Stretch="None" />
                             </ToggleButton.Background>
 
+                            <!--  Toggle Button - Checked, Unchecked events  -->
+                            <ToggleButton.Triggers>
+                                <EventTrigger RoutedEvent="ToggleButton.Unchecked">
+                                    <BeginStoryboard>
+                                        <Storyboard x:Name="hideStackPanel">
+                                            <DoubleAnimation
+                                                BeginTime="0:0:0"
+                                                Storyboard.TargetName="nav_panel"
+                                                Storyboard.TargetProperty="Width"
+                                                From="230"
+                                                To="65"
+                                                Duration="0:0:0.2" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+
+                                <EventTrigger RoutedEvent="ToggleButton.Checked">
+                                    <BeginStoryboard>
+                                        <Storyboard x:Name="ShowStackPanel">
+                                            <DoubleAnimation
+                                                BeginTime="0:0:0"
+                                                Storyboard.TargetName="nav_panel"
+                                                Storyboard.TargetProperty="Width"
+                                                From="65"
+                                                To="230"
+                                                Duration="0:0:0.2" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                            </ToggleButton.Triggers>
                         </ToggleButton>
-
-
-
 
                     </Grid>
 
+                    <!--  ListView with menu list items  -->
+                    <ListView
+                        x:Name="LV"
+                        Background="Transparent"
+                        BorderBrush="Transparent"
+                        ItemContainerStyle="{StaticResource listViewItemStyle}"
+                        ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+
+                        <!--  Home  -->
+                        <ListViewItem
+                            Margin="0,0,0,15"
+                            HorizontalAlignment="Left"
+                            MouseEnter="ListViewItem_MouseEnter">
+                            <StackPanel Width="230" Orientation="Horizontal">
+                                <Image
+                                    Margin="12,0,0,0"
+                                    Source="Assets/Icons/img_home.png"
+                                    Stretch="None" />
+
+                                <TextBlock
+                                    Margin="25,0,0,0"
+                                    Style="{StaticResource fontStyle}"
+                                    Text="Home" />
+                            </StackPanel>
+
+                            <!--  ToolTip  -->
+                            <ListViewItem.ToolTip>
+                                <ToolTip
+                                    x:Name="tt_home"
+                                    Content="Home"
+                                    Style="{StaticResource tt_style}" />
+                            </ListViewItem.ToolTip>
+
+                        </ListViewItem>
+
+                        <!--  Contacts  -->
+                        <ListViewItem
+                            Margin="0,0,0,15"
+                            HorizontalAlignment="Left"
+                            MouseEnter="ListViewItem_MouseEnter">
+                            <StackPanel Width="230" Orientation="Horizontal">
+                                <Image
+                                    Margin="12,0,0,0"
+                                    Source="Assets/Icons/img_contact.png"
+                                    Stretch="None" />
+
+                                <TextBlock
+                                    Margin="25,0,0,0"
+                                    Style="{StaticResource fontStyle}"
+                                    Text="Contacts" />
+                            </StackPanel>
+
+                            <!--  ToolTip  -->
+                            <ListViewItem.ToolTip>
+                                <ToolTip
+                                    x:Name="tt_contacts"
+                                    Content="Contacts"
+                                    Style="{StaticResource tt_style}" />
+                            </ListViewItem.ToolTip>
+
+                        </ListViewItem>
+
+                        <!--  Messages  -->
+                        <ListViewItem
+                            Margin="0,0,0,15"
+                            HorizontalAlignment="Left"
+                            MouseEnter="ListViewItem_MouseEnter">
+                            <StackPanel Width="230" Orientation="Horizontal">
+                                <Image
+                                    Margin="12,0,0,0"
+                                    Source="Assets/Icons/img_message.png"
+                                    Stretch="None" />
+
+                                <TextBlock
+                                    Margin="25,0,0,0"
+                                    Style="{StaticResource fontStyle}"
+                                    Text="Messages" />
+                            </StackPanel>
+
+                            <!--  ToolTip  -->
+                            <ListViewItem.ToolTip>
+                                <ToolTip
+                                    x:Name="tt_messages"
+                                    Content="Messages"
+                                    Style="{StaticResource tt_style}" />
+                            </ListViewItem.ToolTip>
+
+                        </ListViewItem>
+
+                        <!--  Maps  -->
+                        <ListViewItem
+                            Margin="0,0,0,15"
+                            HorizontalAlignment="Left"
+                            MouseEnter="ListViewItem_MouseEnter">
+                            <StackPanel Width="230" Orientation="Horizontal">
+                                <Image
+                                    Margin="12,0,0,0"
+                                    Source="Assets/Icons/img_map.png"
+                                    Stretch="None" />
+
+                                <TextBlock
+                                    Margin="25,0,0,0"
+                                    Style="{StaticResource fontStyle}"
+                                    Text="Maps" />
+                            </StackPanel>
+
+                            <!--  ToolTip  -->
+                            <ListViewItem.ToolTip>
+                                <ToolTip
+                                    x:Name="tt_maps"
+                                    Content="Maps"
+                                    Style="{StaticResource tt_style}" />
+                            </ListViewItem.ToolTip>
+
+                        </ListViewItem>
+
+                        <!--  Settings  -->
+                        <ListViewItem
+                            Margin="0,0,0,15"
+                            HorizontalAlignment="Left"
+                            MouseEnter="ListViewItem_MouseEnter">
+                            <StackPanel Width="230" Orientation="Horizontal">
+                                <Image
+                                    Margin="12,0,0,0"
+                                    Source="Assets/Icons/img_setting.png"
+                                    Stretch="None" />
+
+                                <TextBlock
+                                    Margin="25,0,0,0"
+                                    Style="{StaticResource fontStyle}"
+                                    Text="Settings" />
+                            </StackPanel>
+
+                            <!--  ToolTip  -->
+                            <ListViewItem.ToolTip>
+                                <ToolTip
+                                    x:Name="tt_settings"
+                                    Content="Settings"
+                                    Style="{StaticResource tt_style}" />
+                            </ListViewItem.ToolTip>
+
+                        </ListViewItem>
+
+                        <!--  Sign Out  -->
+                        <ListViewItem
+                            Margin="0,0,0,15"
+                            HorizontalAlignment="Left"
+                            MouseEnter="ListViewItem_MouseEnter">
+                            <StackPanel Width="230" Orientation="Horizontal">
+                                <Image
+                                    Margin="12,0,0,0"
+                                    Source="Assets/Icons/img_signout.png"
+                                    Stretch="None" />
+
+                                <TextBlock
+                                    Margin="25,0,0,0"
+                                    Style="{StaticResource fontStyle}"
+                                    Text="Sign Out" />
+                            </StackPanel>
+
+                            <!--  ToolTip  -->
+                            <ListViewItem.ToolTip>
+                                <ToolTip
+                                    x:Name="tt_signout"
+                                    Content="Sign Out"
+                                    Style="{StaticResource tt_style}" />
+                            </ListViewItem.ToolTip>
+
+                        </ListViewItem>
+
+                    </ListView>
+
                 </StackPanel>
-
             </Grid>
-
         </Grid>
-
-
     </Grid>
 </Window>
