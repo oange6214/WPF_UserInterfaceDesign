@@ -43,7 +43,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicPlayerApp", "MusicPlay
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard.FitnessApp", "Dashboard.FitnessApp\Dashboard.FitnessApp.csproj", "{2DE1C616-2093-45DD-B6A9-036BDE53BDB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigationSidebarMenu", "NavigationSidebarMenu\NavigationSidebarMenu.csproj", "{281E751D-BF4C-4D61-8B65-5C6BC927345E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NavigationSidebarMenu", "NavigationSidebarMenu\NavigationSidebarMenu.csproj", "{281E751D-BF4C-4D61-8B65-5C6BC927345E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HamburgerMenu", "HamburgerMenu\HamburgerMenu.csproj", "{E8832213-E614-4749-9A39-B20A1612A7C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +137,10 @@ Global
 		{281E751D-BF4C-4D61-8B65-5C6BC927345E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{281E751D-BF4C-4D61-8B65-5C6BC927345E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{281E751D-BF4C-4D61-8B65-5C6BC927345E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8832213-E614-4749-9A39-B20A1612A7C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8832213-E614-4749-9A39-B20A1612A7C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8832213-E614-4749-9A39-B20A1612A7C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8832213-E614-4749-9A39-B20A1612A7C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

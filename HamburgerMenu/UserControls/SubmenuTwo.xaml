@@ -1,0 +1,264 @@
+﻿<UserControl
+    x:Class="HamburgerMenu.UserControls.SubmenuTwo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:HamburgerMenu.UserControls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+
+        <!--  Toggle Button Sytle  -->
+        <Style x:Key="SubmenuTwo_Btn_Mouseover_Style" TargetType="{x:Type ToggleButton}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+
+                        <Border
+                            x:Name="border"
+                            Height="70"
+                            Background="#454545"
+                            CornerRadius="5"
+                            SnapsToDevicePixels="True">
+                            <ContentPresenter />
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background">
+                                    <Setter.Value>
+                                        <LinearGradientBrush StartPoint="0, 0.1" EndPoint="0.1, 0.3">
+                                            <GradientStop Offset="1" Color="#FF8C00" />
+                                            <GradientStop Offset="1" Color="#454545" />
+                                        </LinearGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="border" Property="Background">
+                                    <Setter.Value>
+                                        <LinearGradientBrush StartPoint="0, 0.1" EndPoint="0.1, 0.3">
+                                            <GradientStop Offset="1" Color="#FFF" />
+                                            <GradientStop Offset="1" Color="#555" />
+                                        </LinearGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid
+            x:Name="SubmenuTwo_Container"
+            Width="275"
+            Height="152"
+            Margin="0,290,0,0"
+            Opacity="1"
+            Visibility="Visible">
+
+            <Border
+                Height="40"
+                VerticalAlignment="Top"
+                Background="#FFF"
+                CornerRadius="8 8 0 0" />
+
+            <Border
+                Width="80"
+                Height="24"
+                Margin="10,9,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="#555"
+                CornerRadius="6">
+
+                <TextBlock
+                    Margin="0,0,0,2"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontFamily="{StaticResource FontStyle_2}"
+                    FontSize="15"
+                    Foreground="#FFF"
+                    Text="Account"
+                    TextAlignment="Center" />
+            </Border>
+
+            <Button
+                x:Name="Close_SubmenuTwo" Click="Close_SubmenuTwo_Click"
+                Width="25"
+                Height="25"
+                Margin="0,8,8,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                BorderBrush="Transparent"
+                BorderThickness="0">
+
+                <Button.Resources>
+                    <ImageBrush
+                        x:Key="SubmenuTwo_Close_Btn1"
+                        ImageSource="{StaticResource SubmenuTwo_CB1}"
+                        Stretch="None" />
+                    <ImageBrush
+                        x:Key="SubmenuTwo_Close_Btn2"
+                        ImageSource="{StaticResource SubmenuTwo_CB2}"
+                        Stretch="None" />
+                </Button.Resources>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+
+                        <Border x:Name="border" Background="{StaticResource SubmenuTwo_Close_Btn1}">
+                            <ContentPresenter />
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="{StaticResource SubmenuTwo_Close_Btn2}" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+
+            <Border
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Panel.ZIndex="-1"
+                Background="#333"
+                BorderBrush="#FFF"
+                BorderThickness="0,0,0,5"
+                CornerRadius="8">
+                <Border
+                    Height="70"
+                    Margin="0,38,0,0"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Center"
+                    Background="Transparent"
+                    CornerRadius="10">
+
+                    <ListBox Height="70">
+
+                        <ListBox.Style>
+                            <Style TargetType="ListBox">
+                                <Setter Property="VerticalAlignment" Value="Top" />
+                                <Setter Property="SelectionMode" Value="Single" />
+                                <Setter Property="Cursor" Value="Hand" />
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="ListBox">
+                                            <Border Background="Transparent" SnapsToDevicePixels="True">
+                                                <ScrollViewer
+                                                    Focusable="False"
+                                                    HorizontalScrollBarVisibility="Disabled"
+                                                    VerticalScrollBarVisibility="Disabled">
+                                                    <ItemsPresenter />
+                                                </ScrollViewer>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </ListBox.Style>
+
+                        <ListBox.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <UniformGrid
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Columns="2"
+                                    IsItemsHost="True" />
+                            </ItemsPanelTemplate>
+                        </ListBox.ItemsPanel>
+
+                        <!--  Passsword  -->
+                        <ListBoxItem x:Name="password_btn">
+                            <ListBoxItem.Template>
+                                <ControlTemplate TargetType="ListBoxItem">
+
+                                    <ToggleButton
+                                        Width="112"
+                                        Margin="0,0,5,0"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Background="#515151"
+                                        IsChecked="{Binding Path=IsSelected, RelativeSource={RelativeSource TemplatedParent}}"
+                                        Style="{StaticResource SubmenuTwo_Btn_Mouseover_Style}">
+
+                                        <Grid>
+                                            <Image
+                                                Margin="5,0,0,12"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                Source="{StaticResource Password_B1}"
+                                                Stretch="None" />
+
+                                            <TextBlock
+                                                Margin="0,0,0,5"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Bottom"
+                                                FontFamily="{StaticResource FontStyle_2}"
+                                                FontSize="14"
+                                                Foreground="#FFF"
+                                                Text="Password" />
+                                        </Grid>
+                                    </ToggleButton>
+
+                                </ControlTemplate>
+                            </ListBoxItem.Template>
+                        </ListBoxItem>
+
+                        <!--  Notification  -->
+                        <ListBoxItem x:Name="notification_btn">
+                            <ListBoxItem.Template>
+                                <ControlTemplate TargetType="ListBoxItem">
+                                    <ToggleButton
+                                        Width="112"
+                                        Margin="5,0,0,0"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Background="#515151"
+                                        IsChecked="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=IsSelected}"
+                                        Style="{StaticResource SubmenuTwo_Btn_Mouseover_Style}">
+
+                                        <Grid>
+                                            <Image
+                                                Margin="5,0,0,12"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                Source="{StaticResource Notification_B1}"
+                                                Stretch="None" />
+
+                                            <TextBlock
+                                                Margin="0,0,0,5"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Bottom"
+                                                FontFamily="{StaticResource FontStyle_2}"
+                                                FontSize="14"
+                                                Foreground="#FFF"
+                                                Text="Notification" />
+                                        </Grid>
+                                    </ToggleButton>
+                                </ControlTemplate>
+                            </ListBoxItem.Template>
+                        </ListBoxItem>
+
+                    </ListBox>
+                </Border>
+            </Border>
+
+        </Grid>
+    </Grid>
+</UserControl>

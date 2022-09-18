@@ -1,0 +1,174 @@
+﻿<UserControl
+    x:Class="HamburgerMenu.UserControls.AppControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:HamburgerMenu.UserControls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <Style x:Key="ControlBtnStyle" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+
+                        <Border
+                            x:Name="border"
+                            BorderThickness="0"
+                            CornerRadius="7">
+                            <ContentPresenter />
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#5F5F5F" />
+                            </Trigger>
+
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#555" />
+                            </Trigger>
+
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid>
+            <Border
+                x:Name="Control_Header"
+                Width="36"
+                Height="123"
+                Margin="0,24,17,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Background="#FF8C00"
+                BorderThickness="0,5,0,5"
+                CornerRadius="0 0 0 0">
+
+                <Border.RenderTransform>
+                    <TranslateTransform X="0" Y="-160" />
+                </Border.RenderTransform>
+
+                <Border.Triggers>
+                    <EventTrigger RoutedEvent="Border.Loaded">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation
+                                    BeginTime="0:0:3.2"
+                                    Storyboard.TargetName="Control_Header"
+                                    Storyboard.TargetProperty="RenderTransform.(TranslateTransform.Y)"
+                                    From="-160"
+                                    To="0"
+                                    Duration="0:0:0.35">
+
+                                    <DoubleAnimation.EasingFunction>
+                                        <CircleEase EasingMode="EaseOut" />
+                                    </DoubleAnimation.EasingFunction>
+
+                                </DoubleAnimation>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Border.Triggers>
+
+                <!--  Content  -->
+                <Grid>
+                    <Border
+                        Margin="0,12,0,12"
+                        Background="#353535"
+                        CornerRadius="5">
+                        <Grid>
+
+                            <!--  Shutdown  -->
+                            <Button
+                                x:Name="App_ShutDown" Click="App_ShutDown_Click"
+                                Height="25"
+                                Margin="4,5,4,0"
+                                HorizontalAlignment="Stretch"
+                                VerticalAlignment="Top"
+                                Style="{StaticResource ControlBtnStyle}">
+
+                                <Image Source="{StaticResource Close_01}" Stretch="None" />
+                            </Button>
+
+                            <!--  Maximize  -->
+                            <Button
+                                x:Name="App_Maximize"
+                                Height="25"
+                                Margin="4,0,4,0"
+                                HorizontalAlignment="Stretch" Click="App_Maximize_Click"
+                                VerticalAlignment="Center"
+                                Style="{StaticResource ControlBtnStyle}">
+
+                                <Image Source="{StaticResource Maximize_01}" Stretch="None" />
+                            </Button>
+
+                            <!--  Minimize  -->
+                            <Button
+                                x:Name="App_Minimize"
+                                Height="25"
+                                Margin="4,0,4,5" Click="App_Minimize_Click"
+                                HorizontalAlignment="Stretch"
+                                VerticalAlignment="Bottom"
+                                Style="{StaticResource ControlBtnStyle}">
+
+                                <Image Source="{StaticResource Minimize_01}" Stretch="None" />
+                            </Button>
+
+                        </Grid>
+                    </Border>
+                </Grid>
+
+            </Border>
+        </Grid>
+
+        <Border
+            x:Name="Control_Footer"
+            Width="36"
+            Height="123"
+            Margin="0,0,17,24"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Background="#FFC800"
+            BorderBrush="#FFF"
+            BorderThickness="0,5,0,5"
+            CornerRadius="0 0 0 0">
+
+            <Border.RenderTransform>
+                <TranslateTransform X="0" Y="160" />
+            </Border.RenderTransform>
+
+            <Border.Triggers>
+                <EventTrigger RoutedEvent="Border.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation
+                                BeginTime="0:0:3.2"
+                                Storyboard.TargetName="Control_Footer"
+                                Storyboard.TargetProperty="RenderTransform.(TranslateTransform.Y)"
+                                From="160"
+                                To="0"
+                                Duration="0:0:0.35">
+
+                                <DoubleAnimation.EasingFunction>
+                                    <CircleEase EasingMode="EaseOut" />
+                                </DoubleAnimation.EasingFunction>
+
+                            </DoubleAnimation>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Border.Triggers>
+        </Border>
+
+    </Grid>
+
+</UserControl>
