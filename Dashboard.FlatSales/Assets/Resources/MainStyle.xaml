@@ -31,8 +31,10 @@
         </Setter>
 
         <Style.Triggers>
-            <Trigger Property="Background" Value="#F7F6F4" />
-            <Trigger Property="Foreground" Value="#FB7657" />
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="#F7F6F4" />
+                <Setter Property="Foreground" Value="#FB7657" />
+            </Trigger>
         </Style.Triggers>
     </Style>
 
