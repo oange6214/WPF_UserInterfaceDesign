@@ -53,7 +53,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SupportPanels", "SupportPan
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MicroApps", "MicroApps", "{97E05380-7DBB-493B-983C-61BD47E41962}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuWithSubMenu", "MenuWithSubMenu\MenuWithSubMenu.csproj", "{FF14EC38-292A-422C-9058-995826F039F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MenuWithSubMenu", "MenuWithSubMenu\MenuWithSubMenu.csproj", "{FF14EC38-292A-422C-9058-995826F039F3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusyIndicatorControl", "BusyIndicatorControl\BusyIndicatorControl.csproj", "{CD00EC08-AC1F-47C3-A048-E46BD44262D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EpicGamesLauncher", "EpicGamesLauncher\EpicGamesLauncher.csproj", "{EC00516F-0CBB-4660-8CAF-E17B8F34BCE9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,6 +157,14 @@ Global
 		{FF14EC38-292A-422C-9058-995826F039F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF14EC38-292A-422C-9058-995826F039F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF14EC38-292A-422C-9058-995826F039F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD00EC08-AC1F-47C3-A048-E46BD44262D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD00EC08-AC1F-47C3-A048-E46BD44262D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD00EC08-AC1F-47C3-A048-E46BD44262D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD00EC08-AC1F-47C3-A048-E46BD44262D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC00516F-0CBB-4660-8CAF-E17B8F34BCE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC00516F-0CBB-4660-8CAF-E17B8F34BCE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC00516F-0CBB-4660-8CAF-E17B8F34BCE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC00516F-0CBB-4660-8CAF-E17B8F34BCE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
