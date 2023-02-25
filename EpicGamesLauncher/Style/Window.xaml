@@ -107,22 +107,25 @@
                                 Click="MinimizeButton_OnClick"
                                 Content="&#xE921;"
                                 FontFamily="{StaticResource 'Segoe MDL2 Assets'}"
-                                FontSize="11" />
+                                FontSize="11"
+                                Style="{StaticResource WindowChromeButtonStyle}" />
                             <Button
                                 x:Name="MaximizeRestoreButton"
                                 Click="MaximizeRestoreButton_OnClick"
-                                Content="&#xE921;"
+                                Content="&#xE922;"
                                 FontFamily="{StaticResource 'Segoe MDL2 Assets'}"
                                 FontSize="11"
                                 Style="{StaticResource WindowChromeRestoreButton}" />
                             <Button
                                 x:Name="CloseButtonButton"
                                 Click="CloseButton_OnClick"
-                                Content="&#xE921;"
+                                Content="&#xE8BB;"
                                 FontFamily="{StaticResource 'Segoe MDL2 Assets'}"
-                                FontSize="11" />
+                                FontSize="11"
+                                Style="{StaticResource WindowChromeCloseButton}" />
                         </StackPanel>
                         <!--#endregion-->
+
                     </Grid>
 
                     <!--#region Window Content-->
