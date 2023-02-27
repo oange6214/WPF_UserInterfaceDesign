@@ -29,7 +29,7 @@
     <SolidColorBrush x:Key="CaptionBrush" Color="{StaticResource CaptionColor}" />
 
     <!--  Caption Font Color  -->
-    <Color x:Key="CaptionFontColor">White</Color>
+    <Color x:Key="CaptionFontColor">#FFFFFF</Color>
     <SolidColorBrush x:Key="CaptionFontBrush" Color="{StaticResource CaptionFontColor}" />
 
     <!--  Caption Button Mouse Over Color  -->
@@ -201,7 +201,7 @@
     <Color x:Key="IconInactiveColor">#838383</Color>
     <SolidColorBrush x:Key="IconInactiveBrush" Color="{StaticResource IconInactiveColor}" />
 
-    <Color x:Key="IconActiveColor">White</Color>
+    <Color x:Key="IconActiveColor">#FFFFFF</Color>
     <SolidColorBrush x:Key="IconActiveBrush" Color="{StaticResource IconActiveColor}" />
 
     <!--  Search Background Color  -->
@@ -224,14 +224,14 @@
         <GradientStop Offset="1.0" Color="#FFDCECFC" />
     </LinearGradientBrush>
 
-    <SolidColorBrush x:Key="ComboBox.MouseOver.Border" Color="White" />
+    <SolidColorBrush x:Key="ComboBox.MouseOver.Border" Color="#FFFFFF" />
     <SolidColorBrush x:Key="ComboBox.MouseOver.Editable.Background" Color="#FFFFFFFF" />
-    <SolidColorBrush x:Key="ComboBox.MouseOver.Editable.Border" Color="White" />
+    <SolidColorBrush x:Key="ComboBox.MouseOver.Editable.Border" Color="#FFFFFF" />
     <LinearGradientBrush x:Key="ComboBox.MouseOver.Editable.Button.Background" StartPoint="0,0" EndPoint="0,1">
         <GradientStop Offset="0.0" Color="#FFEBF4FC" />
         <GradientStop Offset="1.0" Color="#FFDCECFC" />
     </LinearGradientBrush>
-    <SolidColorBrush x:Key="ComboBox.MouseOver.Editable.Button.Border" Color="White" />
+    <SolidColorBrush x:Key="ComboBox.MouseOver.Editable.Button.Border" Color="#FFFFFF" />
     <SolidColorBrush x:Key="ComboBox.Pressed.Glyph" Color="#FF000000" />
 
     <LinearGradientBrush x:Key="ComboBox.Pressed.Background" StartPoint="0,0" EndPoint="0,1">
@@ -257,7 +257,7 @@
     <SolidColorBrush x:Key="ComboBox.Disabled.Editable.Button.Background" Color="Transparent" />
     <SolidColorBrush x:Key="ComboBox.Disabled.Editable.Button.Border" Color="Transparent" />
     <!--<SolidColorBrush x:Key="ComboBox.Static.Glyph" Color="#FF606060"/>-->
-    <SolidColorBrush x:Key="ComboBox.Static.Glyph" Color="White" />
+    <SolidColorBrush x:Key="ComboBox.Static.Glyph" Color="#FFFFFF" />
     <SolidColorBrush x:Key="TextBox.Static.Background" Color="#FFFFFFFF" />
     <SolidColorBrush x:Key="ComboBoxItem.ItemsviewHover.Background" Color="#5C5C5C" />
     <SolidColorBrush x:Key="ComboBoxItem.ItemsviewHover.Border" Color="#5C5C5C" />
@@ -282,4 +282,5 @@
 
     <SolidColorBrush x:Key="ComboBoxItem.ItemsviewHoverFocus.Border" Color="#5C5C5C" />
     <!--#endregion-->
+
 </ResourceDictionary>

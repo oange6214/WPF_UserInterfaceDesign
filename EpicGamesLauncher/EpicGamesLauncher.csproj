@@ -10,6 +10,21 @@
   <ItemGroup>
     <None Remove="Fonts\Font Awesome 6 Free-Solid-900.otf" />
     <None Remove="Fonts\segmdl2.ttf" />
+    <None Remove="Resources\brave.png" />
+    <None Remove="Resources\fortnite.jpg" />
+    <None Remove="Resources\googleicon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\brave.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\fortnite.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\googleicon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>

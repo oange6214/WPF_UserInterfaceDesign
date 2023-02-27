@@ -31,10 +31,9 @@ namespace EpicGamesLauncher.Pages
 
         private void DispatcherTimer_Tick1(object? sender, EventArgs e)
         {
-            if ((Application.Current.MainWindow != null))
+            if(Application.Current.MainWindow is MainWindow main)
             {
-                ((MainWindow)Application.Current.MainWindow).MainFrame.Navigate(
-                    new Uri("Pages/StorePage.xaml", UriKind.RelativeOrAbsolute));
+                main.MainFrame.Navigate(new Uri("Pages/StorePage.xaml", UriKind.RelativeOrAbsolute));
             }
             _dispatcherTimer.Stop();
         }

@@ -15,7 +15,8 @@
         Width="378"
         Height="174"
         HorizontalAlignment="Center"
-        VerticalAlignment="Center">
+        VerticalAlignment="Center"
+        Background="{StaticResource SearchBackgroundBrush}">
         <StackPanel
             HorizontalAlignment="Center"
             VerticalAlignment="Center"

@@ -21,9 +21,9 @@ namespace EpicGamesLauncher.Pages
 
         private void DispatcherTimer_Tick(object? sender, EventArgs e)
         {
-            if (Application.Current.MainWindow != null)
+            if (Application.Current.MainWindow is MainWindow main)
             {
-                ((MainWindow)Application.Current.MainWindow).MainFrame.Navigate(new Uri("Pages/SignInPage.xaml", UriKind.RelativeOrAbsolute));
+                main.MainFrame.Navigate(new Uri("Pages/SignInPage.xaml", UriKind.RelativeOrAbsolute));
             }
             _dispatcherTimer.Stop();
         }

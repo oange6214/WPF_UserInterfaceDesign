@@ -14,19 +14,17 @@ namespace BusyIndicatorControl.Pages
 
         private void Hyperlink_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            if ((Application.Current.MainWindow != null))
+            if (Application.Current.MainWindow is MainWindow main)
             {
-                ((MainWindow)Application.Current.MainWindow).MainFrame.Navigate(
-                    new Uri("../Pages/PreparingToLaunchPage.xaml", UriKind.RelativeOrAbsolute));
+                main.MainFrame.Navigate(new Uri("../Pages/PreparingToLaunchPage.xaml", UriKind.RelativeOrAbsolute));
             }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if ((Application.Current.MainWindow != null))
+            if (Application.Current.MainWindow is MainWindow main)
             {
-                ((MainWindow)Application.Current.MainWindow).MainFrame.Navigate(
-                    new Uri("../Pages/SettingsPage.xaml", UriKind.RelativeOrAbsolute));
+                main.MainFrame.Navigate(new Uri("../Pages/SettingsPage.xaml", UriKind.RelativeOrAbsolute));
             }
         }
     }
