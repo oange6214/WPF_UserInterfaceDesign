@@ -1,4 +1,6 @@
-﻿using System.Windows.Controls;
+﻿using System;
+using System.Windows;
+using System.Windows.Controls;
 
 namespace EpicGamesLauncher.Pages
 {
@@ -7,6 +9,14 @@ namespace EpicGamesLauncher.Pages
         public SettingsPage()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            if (Application.Current.MainWindow is MainWindow main)
+            {
+                main.MainFrame.GoBack();
+            }
         }
     }
 }
