@@ -16,6 +16,7 @@
                 <ResourceDictionary Source="Style/ProgressBarStyles.xaml" />
                 <ResourceDictionary Source="Style/ButtonStyle.xaml" />
                 <ResourceDictionary Source="Style/ComboBoxStyles.xaml" />
+                <ResourceDictionary Source="Style/ScrollBar.xaml" />
             </ResourceDictionary.MergedDictionaries>
 
             <FontFamily x:Key="FontAwesome">pack://application:,,,/Fonts/#Font Awesome 6 Free Solid</FontFamily>
