@@ -57,7 +57,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MenuWithSubMenu", "MenuWith
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusyIndicatorControl", "BusyIndicatorControl\BusyIndicatorControl.csproj", "{CD00EC08-AC1F-47C3-A048-E46BD44262D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EpicGamesLauncher", "EpicGamesLauncher\EpicGamesLauncher.csproj", "{EC00516F-0CBB-4660-8CAF-E17B8F34BCE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EpicGamesLauncher", "EpicGamesLauncher\EpicGamesLauncher.csproj", "{EC00516F-0CBB-4660-8CAF-E17B8F34BCE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginFlatLight", "LoginFlatLight\LoginFlatLight.csproj", "{EEC3599F-FBBD-4D15-B068-46D9698C19F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -165,6 +167,10 @@ Global
 		{EC00516F-0CBB-4660-8CAF-E17B8F34BCE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC00516F-0CBB-4660-8CAF-E17B8F34BCE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC00516F-0CBB-4660-8CAF-E17B8F34BCE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEC3599F-FBBD-4D15-B068-46D9698C19F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEC3599F-FBBD-4D15-B068-46D9698C19F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEC3599F-FBBD-4D15-B068-46D9698C19F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEC3599F-FBBD-4D15-B068-46D9698C19F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -192,6 +198,7 @@ Global
 		{2DE1C616-2093-45DD-B6A9-036BDE53BDB7} = {3FD0457F-1D5E-47D9-BE18-B6A001A5EF94}
 		{281E751D-BF4C-4D61-8B65-5C6BC927345E} = {7FDA9F43-F32E-4548-8419-95608E97FC54}
 		{E8832213-E614-4749-9A39-B20A1612A7C5} = {7FDA9F43-F32E-4548-8419-95608E97FC54}
+		{EEC3599F-FBBD-4D15-B068-46D9698C19F3} = {7FDA9F43-F32E-4548-8419-95608E97FC54}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {147658A9-B8C4-4AB0-BDF8-BB36FB6C657E}

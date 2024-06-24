@@ -1,0 +1,32 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--  Generic Background Color  -->
+    <SolidColorBrush x:Key="PrimaryBackgroundColor" Color="Transparent" />
+    <SolidColorBrush x:Key="SecondaryBackgroundColor" Color="#e6e6e6" />
+    <SolidColorBrush x:Key="AlternateBackgroundColor" Color="WhiteSmoke" />
+    <SolidColorBrush x:Key="HighlightBackgroundColor" Color="#FFF3F9FF" />
+    <SolidColorBrush x:Key="PressedBackgroundColor" Color="#FFD9ECFF" />
+    <SolidColorBrush x:Key="DisabledBackgroundColor" Color="#FFE6E6E6" />
+
+    <!--  Generic Foreground Color  -->
+    <SolidColorBrush x:Key="PrimaryForegroundColor" Color="#FF131E" />
+    <SolidColorBrush x:Key="SecondaryForegroundColor" Color="#909090" />
+    <SolidColorBrush x:Key="TertiaryForegroundColor" Color="#5a5a5a" />
+    <SolidColorBrush x:Key="InputForegroundColor" Color="#707070" />
+    <SolidColorBrush x:Key="PlaceholderForegroundColor" Color="#bdbdbd" />
+    <SolidColorBrush x:Key="TextForegroundColor" Color="#c7c7c7" />
+    <SolidColorBrush x:Key="ButtonForegroundColor" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="DisabledForegroundColor" Color="#FF707070" />
+
+    <!--  Separator Color  -->
+    <SolidColorBrush x:Key="SeparatorBackground" Color="#dfdfdf" />
+
+    <!--  Option Mark Color  -->
+    <SolidColorBrush x:Key="OptionMark.Static.Background" Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="OptionMark.Static.Glyph" Color="#FF131E" />
+    <SolidColorBrush x:Key="OptionMark.MouseOver.Border" Color="#FF5593FF" />
+    <SolidColorBrush x:Key="OptionMark.MouseOver.Glyph" Color="#FF131E" />
+    <SolidColorBrush x:Key="OptionMark.Pressed.Border" Color="#FF3C77DD" />
+    <SolidColorBrush x:Key="OptionMark.Pressed.Glyph" Color="#FF131E" />
+    <SolidColorBrush x:Key="OptionMark.Disabled.Border" Color="#FFBCBCBC" />
+</ResourceDictionary>
