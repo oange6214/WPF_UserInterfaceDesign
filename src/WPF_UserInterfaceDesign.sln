@@ -59,9 +59,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusyIndicatorControl", "Bus
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EpicGamesLauncher", "EpicGamesLauncher\EpicGamesLauncher.csproj", "{EC00516F-0CBB-4660-8CAF-E17B8F34BCE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginFlatLight", "LoginFlatLight\LoginFlatLight.csproj", "{EEC3599F-FBBD-4D15-B068-46D9698C19F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginFlatLight", "LoginFlatLight\LoginFlatLight.csproj", "{EEC3599F-FBBD-4D15-B068-46D9698C19F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResponsiveApp", "ResponsiveApp\ResponsiveApp.csproj", "{1BE145EE-34A5-4F0C-882F-F658D8FAC621}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ResponsiveApp", "ResponsiveApp\ResponsiveApp.csproj", "{1BE145EE-34A5-4F0C-882F-F658D8FAC621}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashborad.Modern", "Dashborad.Modern\Dashborad.Modern.csproj", "{05D2EAB4-5E63-44DA-BB5B-E308CEAB3EB3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -177,6 +179,10 @@ Global
 		{1BE145EE-34A5-4F0C-882F-F658D8FAC621}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BE145EE-34A5-4F0C-882F-F658D8FAC621}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BE145EE-34A5-4F0C-882F-F658D8FAC621}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05D2EAB4-5E63-44DA-BB5B-E308CEAB3EB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05D2EAB4-5E63-44DA-BB5B-E308CEAB3EB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05D2EAB4-5E63-44DA-BB5B-E308CEAB3EB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05D2EAB4-5E63-44DA-BB5B-E308CEAB3EB3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -206,6 +212,7 @@ Global
 		{E8832213-E614-4749-9A39-B20A1612A7C5} = {7FDA9F43-F32E-4548-8419-95608E97FC54}
 		{EEC3599F-FBBD-4D15-B068-46D9698C19F3} = {7FDA9F43-F32E-4548-8419-95608E97FC54}
 		{1BE145EE-34A5-4F0C-882F-F658D8FAC621} = {97E05380-7DBB-493B-983C-61BD47E41962}
+		{05D2EAB4-5E63-44DA-BB5B-E308CEAB3EB3} = {3FD0457F-1D5E-47D9-BE18-B6A001A5EF94}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {147658A9-B8C4-4AB0-BDF8-BB36FB6C657E}
