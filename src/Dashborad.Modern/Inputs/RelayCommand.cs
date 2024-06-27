@@ -9,18 +9,34 @@ namespace Dashborad.Modern.Inputs;
 
 public class RelayCommand : ICommand
 {
-    private Action<object> _execute;
     private Func<object, bool> _canExecute;
+    private Action<object> _execute;
 
-    public event EventHandler? CanExecuteChanged;
+    public RelayCommand(Action<object> execute)
+    {
+        _execute = execute;
+        _canExecute = null;
+    }
+
+    public RelayCommand(Action<object> execute, Func<object, bool> canExecute)
+    {
+        _execute = execute;
+        _canExecute = canExecute;
+    }
+
+    public event EventHandler CanExecuteChanged
+    {
+        add { CommandManager.RequerySuggested += value; }
+        remove { CommandManager.RequerySuggested -= value; }
+    }
 
     public bool CanExecute(object? parameter)
     {
-        throw new NotImplementedException();
+        return _canExecute == null || _canExecute(parameter);
     }
 
     public void Execute(object? parameter)
     {
-        throw new NotImplementedException();
+        _execute(parameter);
     }
 }
