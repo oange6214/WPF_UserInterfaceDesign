@@ -22,78 +22,91 @@
         <vm:NavigationVM />
     </Window.DataContext>
 
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVisibility" />
+    </Window.Resources>
+
     <Grid>
-        <!--  Window Border  -->
+        <!--  Background Border  -->
+        <Border Style="{StaticResource BackgroundStyle}" />
 
-        <Border Background="#212529" CornerRadius="20" />
+        <!--  Show Panel Button  -->
+        <Button Command="{Binding ShowPanelCommand}" Style="{StaticResource MenuBtnStyle}" />
 
-        <Grid>
-            <!--  Base Grid  -->
+        <!--  Border Control  -->
+        <Border Style="{StaticResource PanelStyle}" Visibility="{Binding IsPanelVisible, Converter={StaticResource BoolToVisibility}}">
+            <Grid>
 
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="228" />
-                <ColumnDefinition Width="622" />
-            </Grid.ColumnDefinitions>
+                <Grid>
+                    <!--  Base Grid  -->
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="228" />
+                        <ColumnDefinition Width="622" />
+                    </Grid.ColumnDefinitions>
 
-            <!--  Navigation Panel  -->
+                    <!--  Navigation Panel  -->
+                    <Grid
+                        Grid.Column="0"
+                        Width="228"
+                        HorizontalAlignment="Left">
+                        <Border Background="#272B2F" CornerRadius="20 0 0 20" />
 
-            <Grid
-                Grid.Column="0"
-                Width="228"
-                HorizontalAlignment="Left">
-                <Border Background="#272B2F" CornerRadius="20 0 0 20" />
+                        <StackPanel Width="228" Height="400">
 
-                <StackPanel Width="228" Height="400">
+                            <!--  Home  -->
+                            <Menu:MenuBtn
+                                ButtonText="Home"
+                                Command="{Binding HomeCommand}"
+                                ImageSource="/Assets/Images/img_home.png"
+                                IsChecked="True" />
 
-                    <!--  Home  -->
-                    <Menu:MenuBtn
-                        ButtonText="Home"
-                        Command="{Binding HomeCommand}"
-                        ImageSource="/Assets/Images/img_home.png"
-                        IsChecked="True" />
+                            <!--  Customer  -->
+                            <Menu:MenuBtn
+                                ButtonText="Customer"
+                                Command="{Binding CustomersCommand}"
+                                ImageSource="/Assets/Images/img_customer.png" />
 
-                    <!--  Customer  -->
-                    <Menu:MenuBtn
-                        ButtonText="Customer"
-                        Command="{Binding CustomersCommand}"
-                        ImageSource="/Assets/Images/img_customer.png" />
+                            <!--  Products  -->
+                            <Menu:MenuBtn
+                                ButtonText="Products"
+                                Command="{Binding ProductsCommand}"
+                                ImageSource="/Assets/Images/img_product.png" />
 
-                    <!--  Products  -->
-                    <Menu:MenuBtn
-                        ButtonText="Products"
-                        Command="{Binding ProductsCommand}"
-                        ImageSource="/Assets/Images/img_product.png" />
+                            <!--  Orders  -->
+                            <Menu:MenuBtn
+                                ButtonText="Order"
+                                Command="{Binding OrdersCommand}"
+                                ImageSource="/Assets/Images/img_order.png" />
 
-                    <!--  Orders  -->
-                    <Menu:MenuBtn
-                        ButtonText="Order"
-                        Command="{Binding OrdersCommand}"
-                        ImageSource="/Assets/Images/img_order.png" />
+                            <!--  Transactions  -->
+                            <Menu:MenuBtn
+                                ButtonText="Transaction"
+                                Command="{Binding TransactionsCommand}"
+                                ImageSource="/Assets/Images/img_transaction.png" />
 
-                    <!--  Transactions  -->
-                    <Menu:MenuBtn
-                        ButtonText="Transaction"
-                        Command="{Binding TransactionsCommand}"
-                        ImageSource="/Assets/Images/img_transaction.png" />
+                            <!--  Shipments  -->
+                            <Menu:MenuBtn
+                                ButtonText="Shipment"
+                                Command="{Binding ShipmentsCommand}"
+                                ImageSource="/Assets/Images/img_shipment.png" />
 
-                    <!--  Shipments  -->
-                    <Menu:MenuBtn
-                        ButtonText="Shipment"
-                        Command="{Binding ShipmentsCommand}"
-                        ImageSource="/Assets/Images/img_shipment.png" />
+                            <!--  Settings  -->
+                            <Menu:MenuBtn
+                                ButtonText="Settings"
+                                Command="{Binding SettingsCommand}"
+                                ImageSource="/Assets/Images/img_setting.png" />
+                        </StackPanel>
+                    </Grid>
 
-                    <!--  Settings  -->
-                    <Menu:MenuBtn
-                        ButtonText="Settings"
-                        Command="{Binding SettingsCommand}"
-                        ImageSource="/Assets/Images/img_setting.png" />
-                </StackPanel>
+                    <Grid Grid.Column="1">
+                        <ContentControl x:Name="Pages" Content="{Binding CurrentView}" />
+                    </Grid>
+                </Grid>
+
+                <!--  Hide Panel Button  -->
+                <Button Command="{Binding HidePanelCommand}" Style="{StaticResource ClosePanelStyle}" />
             </Grid>
-
-            <Grid Grid.Column="1">
-                <ContentControl x:Name="Pages" Content="{Binding CurrentView}" />
-            </Grid>
-        </Grid>
+        </Border>
 
         <Button
             x:Name="CloseApp"

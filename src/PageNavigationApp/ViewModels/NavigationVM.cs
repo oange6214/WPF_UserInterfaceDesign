@@ -6,7 +6,14 @@ namespace PageNavigationApp.ViewModels;
 
 public class NavigationVM : ViewModelBase
 {
+    private bool _isPanelVisible;
     private object _currentView;
+
+    public bool IsPanelVisible
+    {
+        get => _isPanelVisible;
+        set => SetProperty(ref _isPanelVisible, value);
+    }
 
     public object CurrentView
     {
@@ -14,14 +21,16 @@ public class NavigationVM : ViewModelBase
         set => SetProperty(ref _currentView, value);
     }
 
-    public IRelayCommand HomeCommand { get; set; }
-    public IRelayCommand CustomersCommand { get; set; }
-    public IRelayCommand ProductsCommand { get; set; }
-    public IRelayCommand OrdersCommand { get; set; }
-    public IRelayCommand TransactionsCommand { get; set; }
-    public IRelayCommand ShipmentsCommand { get; set; }
-    public IRelayCommand SettingsCommand { get; set; }
-    public IRelayCommand CloseCommand { get; set; }
+    public IRelayCommand ShowPanelCommand { get; init; }
+    public IRelayCommand HidePanelCommand { get; init; }
+    public IRelayCommand HomeCommand { get; init; }
+    public IRelayCommand CustomersCommand { get; init; }
+    public IRelayCommand ProductsCommand { get; init; }
+    public IRelayCommand OrdersCommand { get; init; }
+    public IRelayCommand TransactionsCommand { get; init; }
+    public IRelayCommand ShipmentsCommand { get; init; }
+    public IRelayCommand SettingsCommand { get; init; }
+    public IRelayCommand CloseCommand { get; init; }
 
     private void Home(object obj) => CurrentView = new HomeVM();
 
@@ -44,6 +53,8 @@ public class NavigationVM : ViewModelBase
 
     public NavigationVM()
     {
+        ShowPanelCommand = new RelayCommand(ShowPanel);
+        HidePanelCommand = new RelayCommand(HidePanel);
         HomeCommand = new RelayCommand<object>(Home);
         CustomersCommand = new RelayCommand<object>(Customer);
         ProductsCommand = new RelayCommand<object>(Product);
@@ -55,5 +66,17 @@ public class NavigationVM : ViewModelBase
 
         // Startup Page
         CurrentView = new HomeVM();
+
+        _isPanelVisible = false;
+    }
+
+    public void ShowPanel()
+    {
+        IsPanelVisible = true;
+    }
+
+    public void HidePanel()
+    {
+        IsPanelVisible = false;
     }
 }

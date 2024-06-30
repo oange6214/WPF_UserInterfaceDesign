@@ -9,11 +9,12 @@
     d:DesignWidth="622"
     mc:Ignorable="d">
 
-    <Grid>
-        <Border CornerRadius="0 20 20 0">
-            <Border.Background>
-                <ImageBrush ImageSource="/Assets/Images/home_page.png" Stretch="None" />
-            </Border.Background>
-        </Border>
-    </Grid>
+    <Border CornerRadius="0 20 20 0">
+        <Grid Style="{StaticResource NameBase}">
+            <TextBlock Style="{StaticResource TextOne}" />
+            <Border Style="{StaticResource TextBorder}">
+                <TextBlock Style="{StaticResource TextTwo}" />
+            </Border>
+        </Grid>
+    </Border>
 </UserControl>

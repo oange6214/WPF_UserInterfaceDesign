@@ -5,6 +5,7 @@
         <ResourceDictionary Source="/Assets/Styles/Image.xaml" />
         <ResourceDictionary Source="/Assets/Styles/Page.xaml" />
         <ResourceDictionary Source="/Assets/Styles/Text.xaml" />
+        <ResourceDictionary Source="/Assets/Styles/Styles.xaml" />
         <ResourceDictionary Source="/Utilities/DataTemplate.xaml" />
         <ResourceDictionary Source="/Controls/MenuBtn/MenuBtn.xaml" />
     </ResourceDictionary.MergedDictionaries>
