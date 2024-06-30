@@ -2,17 +2,25 @@
     x:Class="PageNavigationApp.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Menu="clr-namespace:PageNavigationApp.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:PageNavigationApp"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:view="clr-namespace:PageNavigationApp.Views"
+    xmlns:vm="clr-namespace:PageNavigationApp.ViewModels"
     Title="MainWindow"
-    Width="600"
-    Height="850"
+    Width="850"
+    Height="600"
     AllowsTransparency="True"
     Background="Transparent"
+    MouseDown="Window_MouseDown"
     WindowStartupLocation="CenterScreen"
     WindowStyle="None"
     mc:Ignorable="d">
+
+    <Window.DataContext>
+        <vm:NavigationVM />
+    </Window.DataContext>
 
     <Grid>
         <!--  Window Border  -->
@@ -26,6 +34,92 @@
                 <ColumnDefinition Width="228" />
                 <ColumnDefinition Width="622" />
             </Grid.ColumnDefinitions>
+
+            <!--  Navigation Panel  -->
+
+            <Grid
+                Grid.Column="0"
+                Width="228"
+                HorizontalAlignment="Left">
+                <Border Background="#272B2F" CornerRadius="20 0 0 20" />
+
+                <StackPanel Width="228" Height="400">
+
+                    <!--  Home  -->
+                    <!--<Menu:Btn
+                        ButtonText="Home"
+                        Command="{Binding HomeCommand}"
+                        ImageSource="/Assets/Images/img_home.png"
+                        Style="{StaticResource BtnStyle}" />-->
+
+                    <Menu:Btn
+                        Command="{Binding HomeCommand}"
+                        IsChecked="True"
+                        Style="{StaticResource BtnStyle}">
+                        <Grid>
+                            <Image Source="/Assets/Images/img_home.png" Style="{StaticResource Image_Style}" />
+                            <TextBlock Style="{StaticResource Text_Style}" Text="Home" />
+                        </Grid>
+                    </Menu:Btn>
+
+                    <!--  Customer  -->
+                    <Menu:Btn Command="{Binding CustomersCommand}" Style="{StaticResource BtnStyle}">
+                        <Grid>
+                            <Image Source="/Assets/Images/img_customer.png" Style="{StaticResource Image_Style}" />
+                            <TextBlock Style="{StaticResource Text_Style}" Text="Customer" />
+                        </Grid>
+                    </Menu:Btn>
+
+                    <!--  Products  -->
+                    <Menu:Btn Command="{Binding ProductsCommand}" Style="{StaticResource BtnStyle}">
+                        <Grid>
+                            <Image Source="/Assets/Images/img_product.png" Style="{StaticResource Image_Style}" />
+                            <TextBlock Style="{StaticResource Text_Style}" Text="Products" />
+                        </Grid>
+                    </Menu:Btn>
+
+                    <!--  Orders  -->
+                    <Menu:Btn Command="{Binding OrdersCommand}" Style="{StaticResource BtnStyle}">
+                        <Grid>
+                            <Image Source="/Assets/Images/img_order.png" Style="{StaticResource Image_Style}" />
+                            <TextBlock Style="{StaticResource Text_Style}" Text="Order" />
+                        </Grid>
+                    </Menu:Btn>
+
+                    <!--  Transactions  -->
+                    <Menu:Btn Command="{Binding TransactionsCommand}" Style="{StaticResource BtnStyle}">
+                        <Grid>
+                            <Image Source="/Assets/Images/img_transaction.png" Style="{StaticResource Image_Style}" />
+                            <TextBlock Style="{StaticResource Text_Style}" Text="Transaction" />
+                        </Grid>
+                    </Menu:Btn>
+
+                    <!--  Shipments  -->
+                    <Menu:Btn Command="{Binding ShipmentsCommand}" Style="{StaticResource BtnStyle}">
+                        <Grid>
+                            <Image Source="/Assets/Images/img_shipment.png" Style="{StaticResource Image_Style}" />
+                            <TextBlock Style="{StaticResource Text_Style}" Text="Shipment" />
+                        </Grid>
+                    </Menu:Btn>
+
+                    <!--  Settings  -->
+                    <Menu:Btn Command="{Binding ShipmentsCommand}" Style="{StaticResource BtnStyle}">
+                        <Grid>
+                            <Image Source="/Assets/Images/img_setting.png" Style="{StaticResource Image_Style}" />
+                            <TextBlock Style="{StaticResource Text_Style}" Text="Settings" />
+                        </Grid>
+                    </Menu:Btn>
+                </StackPanel>
+            </Grid>
+
+            <Grid Grid.Column="1">
+                <ContentControl x:Name="Pages" Content="{Binding CurrentView}" />
+            </Grid>
         </Grid>
+
+        <Button
+            x:Name="CloseApp"
+            Command="{Binding CloseCommand}"
+            Style="{StaticResource ExitApp}" />
     </Grid>
 </Window>
