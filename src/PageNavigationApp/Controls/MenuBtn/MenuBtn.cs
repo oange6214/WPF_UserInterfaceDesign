@@ -4,25 +4,25 @@ using System.Windows.Media;
 
 namespace PageNavigationApp.Controls;
 
-public class Btn : RadioButton
+public class MenuBtn : RadioButton
 {
     public static readonly DependencyProperty ButtonTextProperty = DependencyProperty.Register(
         nameof(ButtonText),
         typeof(string),
-        typeof(Btn),
+        typeof(MenuBtn),
         new PropertyMetadata(string.Empty)
         );
 
     public static readonly DependencyProperty ImageSourceProperty = DependencyProperty.Register(
         nameof(ImageSource),
         typeof(ImageSource),
-        typeof(Btn),
+        typeof(MenuBtn),
         new PropertyMetadata(null)
         );
 
-    static Btn()
+    static MenuBtn()
     {
-        DefaultStyleKeyProperty.OverrideMetadata(typeof(Btn), new FrameworkPropertyMetadata(typeof(Btn)));
+        DefaultStyleKeyProperty.OverrideMetadata(typeof(MenuBtn), new FrameworkPropertyMetadata(typeof(MenuBtn)));
     }
 
     public string ButtonText
