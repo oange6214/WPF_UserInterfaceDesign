@@ -43,7 +43,7 @@
                     VerticalAlignment="Center"
                     ContentSource="Header"
                     RecognizesAccessKey="True"
-                    TextBlock.FontFamily="Fonts/#Roboto Light"
+                    TextBlock.FontFamily="../Fonts/#Roboto Light"
                     TextBlock.FontSize="20"
                     TextBlock.Foreground="White" />
 
@@ -155,7 +155,7 @@
                     VerticalAlignment="Center"
                     ContentSource="Header"
                     RecognizesAccessKey="True"
-                    TextBlock.FontFamily="Fonts/#Roboto Light"
+                    TextBlock.FontFamily="../Fonts/#Roboto Light"
                     TextBlock.FontSize="20"
                     TextBlock.Foreground="#FFFFFF" />
             </Grid>
@@ -221,7 +221,7 @@
                     VerticalAlignment="Center"
                     ContentSource="Header"
                     RecognizesAccessKey="True"
-                    TextBlock.FontFamily="Fonts/#Roboto Light"
+                    TextBlock.FontFamily="../Fonts/#Roboto Light"
                     TextBlock.FontSize="20"
                     TextBlock.Foreground="White" />
             </Grid>

@@ -13,13 +13,16 @@ public class MainVM : ViewModelBase
     {
         ShowPanelCommand = new RelayCommand(ShowPanel);
         HidePanelCommand = new RelayCommand(HidePanel);
+
         HomeCommand = new RelayCommand<object>(Home);
+        SpotifyCommand = new RelayCommand<object>(Spotify);
         CustomersCommand = new RelayCommand<object>(Customer);
         ProductsCommand = new RelayCommand<object>(Product);
         OrdersCommand = new RelayCommand<object>(Order);
         TransactionsCommand = new RelayCommand<object>(Transaction);
         ShipmentsCommand = new RelayCommand<object>(Shipment);
         SettingsCommand = new RelayCommand<object>(Setting);
+
         CloseCommand = new RelayCommand(Close);
         MaxCommand = new RelayCommand<Window>(MaxNormal);
 
@@ -42,6 +45,7 @@ public class MainVM : ViewModelBase
     public IRelayCommand HidePanelCommand { get; init; }
 
     public IRelayCommand HomeCommand { get; init; }
+    public IRelayCommand SpotifyCommand { get; init; }
 
     public bool IsPanelVisible
     {
@@ -75,6 +79,8 @@ public class MainVM : ViewModelBase
     private void Customer(object obj) => CurrentView = new CustomerVM();
 
     private void Home(object obj) => CurrentView = new HomeVM();
+
+    private void Spotify(object obj) => CurrentView = new SpotifyVM();
 
     private void MaxNormal(Window window)
     {
