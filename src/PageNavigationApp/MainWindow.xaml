@@ -8,6 +8,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:view="clr-namespace:PageNavigationApp.Views"
     xmlns:vm="clr-namespace:PageNavigationApp.ViewModels"
+    x:Name="root"
     Title="MainWindow"
     Width="850"
     Height="600"
@@ -19,98 +20,265 @@
     mc:Ignorable="d">
 
     <Window.DataContext>
-        <vm:NavigationVM />
+        <vm:MainVM />
     </Window.DataContext>
 
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="BoolToVisibility" />
     </Window.Resources>
 
-    <Grid>
-        <!--  Background Border  -->
-        <Border Style="{StaticResource BackgroundStyle}" />
+    <!--  Background Border  -->
+    <Border Style="{StaticResource BackgroundStyle}">
+        <Grid>
+            <TextBlock
+                Margin="0,0,15,10"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                FontFamily="Assets/Fonts/#Orbitron Medium"
+                FontSize="10"
+                Foreground="#545965"
+                Text="D E S I G N  T H E  I N T E R F A C E" />
 
-        <!--  Show Panel Button  -->
-        <Button Command="{Binding ShowPanelCommand}" Style="{StaticResource MenuBtnStyle}" />
+            <Border
+                Width="5"
+                Height="15"
+                Margin="0,0,0,8"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Background="#D61734"
+                CornerRadius="3 0 0 3" />
 
-        <!--  Border Control  -->
-        <Border Style="{StaticResource PanelStyle}" Visibility="{Binding IsPanelVisible, Converter={StaticResource BoolToVisibility}}">
-            <Grid>
+            <!--  Show Panel Button  -->
+            <Button Command="{Binding ShowPanelCommand}" Style="{StaticResource MenuBtnStyle}" />
 
+            <!--  Border Control  -->
+            <Border Style="{StaticResource PanelStyle}" Visibility="Visible">
                 <Grid>
-                    <!--  Base Grid  -->
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="228" />
+                        <ColumnDefinition Width="auto" />
                         <ColumnDefinition Width="622" />
                     </Grid.ColumnDefinitions>
 
-                    <!--  Navigation Panel  -->
                     <Grid
                         Grid.Column="0"
                         Width="228"
                         HorizontalAlignment="Left">
-                        <Border Background="#272B2F" CornerRadius="20 0 0 20" />
 
-                        <StackPanel Width="228" Height="400">
+                        <!--  Main Panel  -->
+                        <Menu
+                            Height="450"
+                            Margin="0,40,0,0"
+                            Background="Transparent">
+                            <Menu.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <VirtualizingStackPanel Orientation="Vertical" />
+                                </ItemsPanelTemplate>
+                            </Menu.ItemsPanel>
 
-                            <!--  Home  -->
-                            <Menu:MenuBtn
-                                ButtonText="Home"
-                                Command="{Binding HomeCommand}"
-                                ImageSource="/Assets/Images/img_home.png"
-                                IsChecked="True" />
+                            <!--  Main Menu - Home  -->
+                            <MenuItem Header="Home" Template="{StaticResource Menu_Template}">
+                                <MenuItem.Icon>
+                                    <Image Source="Assets/Images/img_home.png" Stretch="None" />
+                                </MenuItem.Icon>
+                            </MenuItem>
 
-                            <!--  Customer  -->
-                            <Menu:MenuBtn
-                                ButtonText="Customer"
-                                Command="{Binding CustomersCommand}"
-                                ImageSource="/Assets/Images/img_customer.png" />
+                            <!--  Main Menu Music  -->
+                            <MenuItem Header="Music" Template="{StaticResource Menu_SubMenu_Template}">
+                                <MenuItem.Icon>
+                                    <Image Source="Assets/Images/img_music.png" Stretch="None" />
+                                </MenuItem.Icon>
 
-                            <!--  Products  -->
-                            <Menu:MenuBtn
-                                ButtonText="Products"
-                                Command="{Binding ProductsCommand}"
-                                ImageSource="/Assets/Images/img_product.png" />
+                                <!--  Music Submenu - All Songs  -->
+                                <MenuItem Header="All Songs" Template="{StaticResource Item_Template}">
+                                    <MenuItem.Icon>
+                                        <Image Source="Assets/Images/img_songs.png" Stretch="None" />
+                                    </MenuItem.Icon>
+                                </MenuItem>
 
-                            <!--  Orders  -->
-                            <Menu:MenuBtn
-                                ButtonText="Order"
-                                Command="{Binding OrdersCommand}"
-                                ImageSource="/Assets/Images/img_order.png" />
+                                <!--  Music Submenu - Albums  -->
+                                <MenuItem Header="Albums" Template="{StaticResource Item_Template}">
+                                    <MenuItem.Icon>
+                                        <Image Source="Assets/Images/img_album.png" Stretch="None" />
+                                    </MenuItem.Icon>
+                                </MenuItem>
 
-                            <!--  Transactions  -->
-                            <Menu:MenuBtn
-                                ButtonText="Transaction"
-                                Command="{Binding TransactionsCommand}"
-                                ImageSource="/Assets/Images/img_transaction.png" />
+                                <!--  Music Submenu - Genres  -->
+                                <MenuItem Header="Genres" Template="{StaticResource Menu_SubMenu_Template}">
+                                    <MenuItem.Icon>
+                                        <Image Source="Assets/Images/img_genre.png" Stretch="None" />
+                                    </MenuItem.Icon>
 
-                            <!--  Shipments  -->
-                            <Menu:MenuBtn
-                                ButtonText="Shipment"
-                                Command="{Binding ShipmentsCommand}"
-                                ImageSource="/Assets/Images/img_shipment.png" />
+                                    <!--  Genres Submenu - Pop  -->
+                                    <MenuItem Header="Pop" Template="{StaticResource Item_Template}">
+                                        <MenuItem.Icon>
+                                            <Image Source="Assets/Images/img_pop.png" Stretch="None" />
+                                        </MenuItem.Icon>
+                                    </MenuItem>
 
-                            <!--  Settings  -->
-                            <Menu:MenuBtn
-                                ButtonText="Settings"
-                                Command="{Binding SettingsCommand}"
-                                ImageSource="/Assets/Images/img_setting.png" />
-                        </StackPanel>
+                                    <!--  Genres Submenu - Rock  -->
+                                    <MenuItem Header="Rock" Template="{StaticResource Item_Template}">
+                                        <MenuItem.Icon>
+                                            <Image Source="Assets/Images/img_rock.png" Stretch="None" />
+                                        </MenuItem.Icon>
+                                    </MenuItem>
+
+                                    <!--  Genres Submenu - Metal  -->
+                                    <MenuItem Header="Metal" Template="{StaticResource Item_Template}">
+                                        <MenuItem.Icon>
+                                            <Image Source="Assets/Images/img_metal.png" Stretch="None" />
+                                        </MenuItem.Icon>
+                                    </MenuItem>
+
+                                    <!--  Genres Submenu - Acoustic  -->
+                                    <MenuItem Header="Acoustic" Template="{StaticResource Item_Template}">
+                                        <MenuItem.Icon>
+                                            <Image Source="Assets/Images/img_acoustic.png" Stretch="None" />
+                                        </MenuItem.Icon>
+                                    </MenuItem>
+
+                                    <!--  Genres Submenu - Hip Hop  -->
+                                    <MenuItem Header="Hip Hop" Template="{StaticResource Item_Template}">
+                                        <MenuItem.Icon>
+                                            <Image Source="Assets/Images/img_hiphop.png" Stretch="None" />
+                                        </MenuItem.Icon>
+                                    </MenuItem>
+
+                                    <!--  Genres Submenu - Electronic  -->
+                                    <MenuItem Header="Electronic" Template="{StaticResource Item_Template}">
+                                        <MenuItem.Icon>
+                                            <Image Source="Assets/Images/img_electronic.png" Stretch="None" />
+                                        </MenuItem.Icon>
+                                    </MenuItem>
+
+                                    <!--  Genres Submenu - Jazz  -->
+                                    <MenuItem Header="Jazz" Template="{StaticResource Item_Template}">
+                                        <MenuItem.Icon>
+                                            <Image Source="Assets/Images/img_jazz.png" Stretch="None" />
+                                        </MenuItem.Icon>
+                                    </MenuItem>
+                                </MenuItem>
+
+                                <!--  Music Submenu - Artists  -->
+                                <MenuItem Header="Artists" Template="{StaticResource Item_Template}">
+                                    <MenuItem.Icon>
+                                        <Image Source="Assets/Images/img_artist.png" Stretch="None" />
+                                    </MenuItem.Icon>
+                                </MenuItem>
+
+                                <!--  Music Submenu - Playlists  -->
+                                <MenuItem Header="Playlists" Template="{StaticResource Item_Template}">
+                                    <MenuItem.Icon>
+                                        <Image Source="Assets/Images/img_playlist.png" Stretch="None" />
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                            </MenuItem>
+
+                            <!--  Main Menu - Movies  -->
+                            <MenuItem Header="Movies" Template="{StaticResource Menu_Template}">
+                                <MenuItem.Icon>
+                                    <Image Source="Assets/Images/img_movies.png" Stretch="None" />
+                                </MenuItem.Icon>
+                            </MenuItem>
+
+                            <!--  Main Menu - Search  -->
+                            <MenuItem Header="Search" Template="{StaticResource Menu_Template}">
+                                <MenuItem.Icon>
+                                    <Image Source="Assets/Images/img_search.png" Stretch="None" />
+                                </MenuItem.Icon>
+                            </MenuItem>
+
+                            <!--  Main Menu - Folders  -->
+                            <MenuItem Header="Folders" Template="{StaticResource Menu_Template}">
+                                <MenuItem.Icon>
+                                    <Image Source="Assets/Images/img_folder.png" Stretch="None" />
+                                </MenuItem.Icon>
+                            </MenuItem>
+
+                            <!--  Main Menu - History  -->
+                            <MenuItem Header="History" Template="{StaticResource Menu_Template}">
+                                <MenuItem.Icon>
+                                    <Image Source="Assets/Images/img_history.png" Stretch="None" />
+                                </MenuItem.Icon>
+                            </MenuItem>
+
+                            <!--  Main Menu - Settings  -->
+                            <MenuItem Header="Settings" Template="{StaticResource Menu_SubMenu_Template}">
+                                <MenuItem.Icon>
+                                    <Image Source="Assets/Images/img_setting.png" Stretch="None" />
+                                </MenuItem.Icon>
+
+                                <!--  Settings Submenu - Input / Codecs  -->
+                                <MenuItem Header="Input / Codecs" Template="{StaticResource Item_Template}">
+                                    <MenuItem.Icon>
+                                        <Image Source="Assets/Images/img_input.png" Stretch="None" />
+                                    </MenuItem.Icon>
+                                </MenuItem>
+
+                                <!--  Settings Submenu - Hotkeys  -->
+                                <MenuItem Header="Hotkeys" Template="{StaticResource Item_Template}">
+                                    <MenuItem.Icon>
+                                        <Image Source="Assets/Images/img_hotkey.png" Stretch="None" />
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                            </MenuItem>
+
+                            <!--  Main Menu - About  -->
+                            <MenuItem Header="History" Template="{StaticResource Menu_Template}">
+                                <MenuItem.Icon>
+                                    <Image Source="Assets/Images/img_about.png" Stretch="None" />
+                                </MenuItem.Icon>
+                            </MenuItem>
+
+                            <!--  Main Menu - Exit  -->
+                            <MenuItem Header="Exit" Template="{StaticResource Menu_Template}">
+                                <MenuItem.Icon>
+                                    <Image Source="Assets/Images/img_exit.png" Stretch="None" />
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </Menu>
                     </Grid>
 
                     <Grid Grid.Column="1">
                         <ContentControl x:Name="Pages" Content="{Binding CurrentView}" />
                     </Grid>
+
+                    <!--  Logo Panel  -->
+                    <Grid
+                        Height="50"
+                        Margin="0,30,0,0"
+                        VerticalAlignment="Top">
+                        <Border
+                            Width="6"
+                            Height="25"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            Background="#D61734"
+                            CornerRadius="3 0 0 3" />
+                        <TextBlock
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontFamily="Assets/Fonts/#Orbitron Medium"
+                            FontSize="15"
+                            Foreground="#FFF"
+                            Text="C#  D E S I G N" />
+                    </Grid>
+
+                    <!--  Hide Panel Button  -->
+                    <Button Command="{Binding HidePanelCommand}" Style="{StaticResource ClosePanelStyle}" />
                 </Grid>
+            </Border>
 
-                <!--  Hide Panel Button  -->
-                <Button Command="{Binding HidePanelCommand}" Style="{StaticResource ClosePanelStyle}" />
-            </Grid>
-        </Border>
+            <!--  Maximize / Minimize App  -->
+            <Button
+                x:Name="MaxBtn"
+                Command="{Binding MaxCommand}"
+                CommandParameter="{Binding ElementName=root}"
+                Style="{StaticResource MaxBtnStyle}" />
 
-        <Button
-            x:Name="CloseApp"
-            Command="{Binding CloseCommand}"
-            Style="{StaticResource ExitApp}" />
-    </Grid>
+            <Button
+                x:Name="CloseApp"
+                Command="{Binding CloseCommand}"
+                Style="{StaticResource CloseBtnStyle}" />
+        </Grid>
+    </Border>
 </Window>

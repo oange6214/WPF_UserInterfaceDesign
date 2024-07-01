@@ -149,8 +149,8 @@
 
     <Style x:Key="PanelStyle" TargetType="Border">
 
-        <Setter Property="Width" Value="220" />
-        <Setter Property="Background" Value="#C02442" />
+        <Setter Property="Width" Value="228" />
+        <Setter Property="Background" Value="#2E333A" />
         <Setter Property="HorizontalAlignment" Value="Left" />
         <Setter Property="CornerRadius" Value="20,0,0,20" />
     </Style>
